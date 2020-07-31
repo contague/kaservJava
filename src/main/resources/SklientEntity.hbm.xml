@@ -1,0 +1,573 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Model.Entities.SklientEntity" table="SKLIENT" schema="">
+        <id name="idklient">
+            <column name="IDKLIENT" sql-type="bigint(19)"/>
+        </id>
+        <property name="nameklient">
+            <column name="NAMEKLIENT" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="fname">
+            <column name="FNAME" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="adrklient">
+            <column name="ADRKLIENT" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="telklient">
+            <column name="TELKLIENT" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="innklient">
+            <column name="INNKLIENT" sql-type="varchar(12)" length="12" not-null="true"/>
+        </property>
+        <property name="kppklient">
+            <column name="KPPKLIENT" sql-type="varchar(9)" length="9" not-null="true"/>
+        </property>
+        <property name="tklient">
+            <column name="TKLIENT" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="idtpriceklient">
+            <column name="IDTPRICEKLIENT" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idgrpklient">
+            <column name="IDGRPKLIENT" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="gidSklient">
+            <column name="GID_SKLIENT" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="okpoklient">
+            <column name="OKPOKLIENT" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="idvidklient">
+            <column name="IDVIDKLIENT" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idcountryklient">
+            <column name="IDCOUNTRYKLIENT" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idbaseSklient">
+            <column name="IDBASE_SKLIENT" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idextDoutSklient">
+            <column name="IDEXT_DOUT_SKLIENT" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idextBaseSklient">
+            <column name="IDEXT_BASE_SKLIENT" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="krnameSklient">
+            <column name="KRNAME_SKLIENT" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="descrSklient">
+            <column name="DESCR_SKLIENT" sql-type="varchar(250)" length="250" not-null="true"/>
+        </property>
+        <property name="messageSklient">
+            <column name="MESSAGE_SKLIENT" sql-type="varchar(150)" length="150" not-null="true"/>
+        </property>
+        <property name="emailSklient">
+            <column name="EMAIL_SKLIENT" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="wwwSklient">
+            <column name="WWW_SKLIENT" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="maxcreditSklient">
+            <column name="MAXCREDIT_SKLIENT" sql-type="numeric(15,2)" precision="15" scale="2" not-null="true"/>
+        </property>
+        <property name="typeTblSklient">
+            <column name="TYPE_TBL_SKLIENT" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="yurAdressSklient">
+            <column name="YUR_ADRESS_SKLIENT" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="pochtAdrressSklient">
+            <column name="POCHT_ADRRESS_SKLIENT" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="familiyaSklient">
+            <column name="FAMILIYA_SKLIENT" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="imyaSklient">
+            <column name="IMYA_SKLIENT" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="otchestvoSklient">
+            <column name="OTCHESTVO_SKLIENT" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="typePoiskSklient">
+            <column name="TYPE_POISK_SKLIENT" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="idgrpnomSklient">
+            <column name="IDGRPNOM_SKLIENT" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idgrphwSklient">
+            <column name="IDGRPHW_SKLIENT" sql-type="bigint(19)" not-null="true"/>
+        </property>
+<!--        <many-to-one name="stpriceByIdtpriceklient" class="Model.Entities.StpriceEntity">-->
+<!--            <column name="IDTPRICEKLIENT" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sgrpklByIdgrpklient" class="Model.Entities.SgrpklEntity">-->
+<!--            <column name="IDGRPKLIENT" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="svidklientByIdvidklient" class="Model.Entities.SvidklientEntity">-->
+<!--            <column name="IDVIDKLIENT" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="scountryByIdcountryklient" class="Model.Entities.ScountryEntity">-->
+<!--            <column name="IDCOUNTRYKLIENT" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sgrpnomByIdgrpnomSklient" class="Model.Entities.SgrpnomEntity">-->
+<!--            <column name="IDGRPNOM_SKLIENT" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="remSgrpHardwareByIdgrphwSklient" class="Model.Entities.RemSgrpHardwareEntity">-->
+<!--            <column name="IDGRPHW_SKLIENT" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <set name="custKlientsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_CUST_KLIENT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.CustKlientEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dkorrvstsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_DKORRVST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DkorrvstEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dostvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_DOSTVS" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DostvsEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dpkosByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLPKO" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DpkoEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dreasByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDGRPOLREA" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DreaEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drealrestsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOK_REALREST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrealrestEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drgAdvcusttsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_DRG_ADVCUSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrgAdvcusttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drgOtchposttsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOST_DRG_OTCHPOSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrgOtchposttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drgPaysaletsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_DRG_PAYSALET" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrgPaysaletEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drgVsraschtsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_DRG_VSRASCHT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrgVsraschtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drkosByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLRKO" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrkoEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dschfactsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDGRPOL_DSCHFACT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DschfactEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dvipbanktsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_DVIPBANKT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DvipbanktEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dvposByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDGRPOL_DVPO" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DvpoEntity"/>-->
+<!--        </set>-->
+<!--        <set name="galldocsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLDOC" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.GalldocEntity"/>-->
+<!--        </set>-->
+<!--        <set name="gurnalplatsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_GURNALPLAT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.GurnalplatEntity"/>-->
+<!--        </set>-->
+<!--        <set name="guroperDcardsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_GUROPER_DCARD" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.GuroperDcardEntity"/>-->
+<!--        </set>-->
+<!--        <set name="hotDraschettsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDGUEST_HOT_DRASCHETT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.HotDraschettEntity"/>-->
+<!--        </set>-->
+<!--        <set name="hotDrealtsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDGUEST_HOT_DREALT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.HotDrealtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="hotGalldocsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKL_HOT_GALLDOC" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.HotGalldocEntity"/>-->
+<!--        </set>-->
+<!--        <set name="hotSostnfsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPLAT_HOT_SOSTNF" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.HotSostnfEntity"/>-->
+<!--        </set>-->
+<!--        <set name="hotSostnfsByIdklient_0" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDGUEST_HOT_SOSTNF" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.HotSostnfEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remCqueriesByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_REM_CQUERY" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemCqueryEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDrgOtchposttsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOST_REM_DRG_OTCHPOSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDrgOtchposttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDvzpertsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_REM_DVZPERT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDvzpertEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzaktprsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDDILER_REM_DZAKTPR" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzaktprEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzaktprsByIdklient_0" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOST_ZIP_REM_DZAKTPR" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzaktprEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remGalldocsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_REM_GALLDOC" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemGalldocEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remGurVigrsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_REM_GUR_VIGR" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemGurVigrEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgostzdilsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_REM_RGOSTZDIL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgostzdilEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgostzdilDvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_REM_RGOSTZDIL_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgostzdilDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgostzscsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_REM_RGOSTZSC" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgostzscEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgostzscDvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_REM_RGOSTZSC_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgostzscDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgotchpostsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOST_REM_RGOTCHPOST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgotchpostEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgotchpostDvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOST_REM_RGOTCHPOST_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgotchpostDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgvzostsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_REM_RGVZOST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgvzostEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgvzostDvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_REM_RGVZOST_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgvzostDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgvzvputisByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLPOL_REM_RGVZVPUTI" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgvzvputiEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgvzvputiDvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLPOL_REM_RGVZVPUTI_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgvzvputiDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remShardwaresByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOST_REM_SHARDWARE" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemShardwareEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remShardwaresByIdklient_0" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDVLAD_REM_SHARDWARE" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemShardwareEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remSkktsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_REM_SKKT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemSkktEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remSkktDvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_REM_SKKT_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemSkktDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remZSByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_REM_Z" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemZEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remZSByIdklient_0" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDDILER_REM_Z" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemZEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgadvcustsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_RGADVCUST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgadvcustEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgadvcustDvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_RGADVCUST_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgadvcustDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgotchpostsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOST_RGOTCHPOST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgotchpostEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgotchpostDvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOST_RGOTCHPOST_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgotchpostDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgotprpostsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOST_RGOTPRPOST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgotprpostEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgotprpostDvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOST_RGOTPRPOST_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgotprpostDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgpaysalesByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_RGPAYSALE" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgpaysaleEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgpaysaleDvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_RGPAYSALE_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgpaysaleDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgrealDvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOK_RGREAL_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgrealDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgvsraschesByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_VSRASCH" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgvsraschEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgvsraschDvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_VSRASCH_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgvsraschDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgzaksByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_ZAK" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgzakEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgzakpostsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOST_RGZAKPOST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgzakpostEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgzakpostDvsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOST_RGZAKPOST_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgzakpostDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="sdiscountCardsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_SDISCOUNT_CARD" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SdiscountCardEntity"/>-->
+<!--        </set>-->
+<!--        <set name="sdocklientsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_SDOCKLIENT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SdocklientEntity"/>-->
+<!--        </set>-->
+<!--        <set name="sdogsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_SDOG" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SdogEntity"/>-->
+<!--        </set>-->
+<!--        <set name="simportedsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_SIMPORTED" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SimportedEntity"/>-->
+<!--        </set>-->
+<!--        <set name="simportnomsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_SIMPORTNOM" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SimportnomEntity"/>-->
+<!--        </set>-->
+<!--        <set name="sklientDopfislsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_SKLIENT_DOPFISL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SklientDopfislEntity"/>-->
+<!--        </set>-->
+<!--        <set name="sklientDopurlsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_SKLIENT_DOPURL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SklientDopurlEntity"/>-->
+<!--        </set>-->
+<!--        <set name="snomsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDSUPPLIER_SNOM" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SnomEntity"/>-->
+<!--        </set>-->
+<!--        <set name="snomsByIdklient_0" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPRODUCER_SNOM" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SnomEntity"/>-->
+<!--        </set>-->
+<!--        <set name="snumtelsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_NUMTEL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SnumtelEntity"/>-->
+<!--        </set>-->
+<!--        <set name="spartsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLPART" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SpartEntity"/>-->
+<!--        </set>-->
+<!--        <set name="sproducersByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_SPRODUCER" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SproducerEntity"/>-->
+<!--        </set>-->
+<!--        <set name="sproducersByIdklient_0" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPOST_ZIP_SPRODUCER" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SproducerEntity"/>-->
+<!--        </set>-->
+<!--        <set name="srschetsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLRSCHET" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SrschetEntity"/>-->
+<!--        </set>-->
+<!--        <set name="ssellersByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_SSELLER" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SsellerEntity"/>-->
+<!--        </set>-->
+<!--        <set name="zpGalldocsByIdklient" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKLIENT_ZP_GALLDOC" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.ZpGalldocEntity"/>-->
+<!--        </set>-->
+    </class>
+</hibernate-mapping>

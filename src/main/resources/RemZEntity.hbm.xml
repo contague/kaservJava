@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Model.Entities.RemZEntity" table="REM_Z" schema="">
+        <id name="idRemZ">
+            <column name="ID_REM_Z" sql-type="bigint(19)"/>
+        </id>
+        <property name="gidRemZ">
+            <column name="GID_REM_Z" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="prefiksRemZ">
+            <column name="PREFIKS_REM_Z" sql-type="varchar(2)" length="2" not-null="true"/>
+        </property>
+        <property name="numRemZ">
+            <column name="NUM_REM_Z" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="posRemZ">
+            <column name="POS_REM_Z" sql-type="timestamp(19)" not-null="true"/>
+        </property>
+        <property name="idbaseRemZ">
+            <column name="IDBASE_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idmodelRemZ">
+            <column name="IDMODEL_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idsklprRemZ">
+            <column name="IDSKLPR_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idklientRemZ">
+            <column name="IDKLIENT_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="iddilerRemZ">
+            <column name="IDDILER_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="sernumRemZ">
+            <column name="SERNUM_REM_Z" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="nameRemZ">
+            <column name="NAME_REM_Z" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="descrRemZ">
+            <column name="DESCR_REM_Z" sql-type="varchar(150)" length="150" not-null="true"/>
+        </property>
+        <property name="idtyperemRemZ">
+            <column name="IDTYPEREM_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idsostRemZ">
+            <column name="IDSOST_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idtecsklRemZ">
+            <column name="IDTECSKL_REM_Z" sql-type="bigint(19)" not-null="true" />
+        </property>
+        <property name="iduserRemZ">
+            <column name="IDUSER_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="operRemZ">
+            <column name="OPER_REM_Z" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="sumRemZ">
+            <column name="SUM_REM_Z" sql-type="numeric(15,2)" precision="15" scale="2" not-null="true"/>
+        </property>
+        <property name="srokRemZ">
+            <column name="SROK_REM_Z" sql-type="date(10)" not-null="true"/>
+        </property>
+        <property name="outRemZ">
+            <column name="OUT_REM_Z" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="idfirmRemZ">
+            <column name="IDFIRM_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idextDoutRemZ">
+            <column name="IDEXT_DOUT_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idextBaseRemZ">
+            <column name="IDEXT_BASE_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="neisprRemZ">
+            <column name="NEISPR_REM_Z" sql-type="varchar(250)" length="250" not-null="true"/>
+        </property>
+        <property name="klientNameRemZ">
+            <column name="KLIENT_NAME_REM_Z" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="klientAdrRemZ">
+            <column name="KLIENT_ADR_REM_Z" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="klientPhoneRemZ">
+            <column name="KLIENT_PHONE_REM_Z" sql-type="varchar(40)" length="40" not-null="true"/>
+        </property>
+        <property name="komplectRemZ">
+            <column name="KOMPLECT_REM_Z" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="modelRemZ">
+            <column name="MODEL_REM_Z" sql-type="varchar(40)" length="40" not-null="true"/>
+        </property>
+        <property name="sostRemZ">
+            <column name="SOST_REM_Z" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="sernum2RemZ">
+            <column name="SERNUM2_REM_Z" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="comentsRemZ">
+            <column name="COMENTS_REM_Z" sql-type="varchar(250)" length="250" not-null="true"/>
+        </property>
+        <property name="posoutRemZ">
+            <column name="POSOUT_REM_Z" sql-type="timestamp(19)" not-null="true"/>
+        </property>
+        <property name="posremontRemZ">
+            <column name="POSREMONT_REM_Z" sql-type="timestamp(19)" not-null="true"/>
+        </property>
+        <property name="warrantyRemZ">
+            <column name="WARRANTY_REM_Z" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="idmexanikRemZ">
+            <column name="IDMEXANIK_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idbrandRemZ">
+            <column name="IDBRAND_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idactcatRemZ">
+            <column name="IDACTCAT_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="guidRemZ">
+            <column name="GUID_REM_Z" sql-type="char(38)" length="38" not-null="true"/>
+        </property>
+        <property name="idzosnRemZ">
+            <column name="IDZOSN_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="flPovtorRemZ">
+            <column name="FL_POVTOR_REM_Z" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="dilerNumzRemZ">
+            <column name="DILER_NUMZ_REM_Z" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="dilerPoszRemZ">
+            <column name="DILER_POSZ_REM_Z" sql-type="timestamp(19)" not-null="true"/>
+        </property>
+        <property name="dilerGuidzRemZ">
+            <column name="DILER_GUIDZ_REM_Z" sql-type="char(38)" length="38" not-null="true"/>
+        </property>
+        <property name="scNumzRemZ">
+            <column name="SC_NUMZ_REM_Z" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="scPoszRemZ">
+            <column name="SC_POSZ_REM_Z" sql-type="timestamp(19)" not-null="true"/>
+        </property>
+        <property name="scGuidzRemZ">
+            <column name="SC_GUIDZ_REM_Z" sql-type="char(38)" length="38" not-null="true"/>
+        </property>
+        <property name="flAddreportRemZ">
+            <column name="FL_ADDREPORT_REM_Z" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="sernumStrRemZ">
+            <column name="SERNUM_STR_REM_Z" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="idhwRemZ">
+            <column name="IDHW_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idkktRemZ">
+            <column name="IDKKT_REM_Z" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="typeTblRemZ">
+            <column name="TYPE_TBL_REM_Z" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="flKlientUvedomlRemZ">
+            <column name="FL_KLIENT_UVEDOML_REM_Z" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="flTrebKonsKlRemZ">
+            <column name="FL_TREB_KONS_KL_REM_Z" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="flKlOtvNaZaprosRemZ">
+            <column name="FL_KL_OTV_NA_ZAPROS_REM_Z" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="prefiksNumRemZ">
+            <column name="PREFIKS_NUM_REM_Z" sql-type="varchar(12)" length="12" not-null="true"/>
+        </property>
+        <property name="numGardocRemZ">
+            <column name="NUM_GARDOC_REM_Z" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="flFictivRemZ">
+            <column name="FL_FICTIV_REM_Z" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="flNeOtchRemZ">
+            <column name="FL_NE_OTCH_REM_Z" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="flNadoOtchRemZ">
+            <column name="FL_NADO_OTCH_REM_Z" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="flIsmGardocRemZ">
+            <column name="FL_ISM_GARDOC_REM_Z" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="numGardocNewRemZ">
+            <column name="NUM_GARDOC_NEW_REM_Z" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="flIsmSernumRemZ">
+            <column name="FL_ISM_SERNUM_REM_Z" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="sernumNewRemZ">
+            <column name="SERNUM_NEW_REM_Z" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="flIsmSernum2RemZ">
+            <column name="FL_ISM_SERNUM2_REM_Z" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="sernum2NewRemZ">
+            <column name="SERNUM2_NEW_REM_Z" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="gotovoKVidacheRemZ">
+            <column name="GOTOVO_K_VIDACHE_REM_Z" sql-type="smallint(5)" not-null="true"/>
+        </property>
+<!--        <many-to-one name="sinfbaseObmenByIdbaseRemZ" class="Model.Entities.SinfbaseObmenEntity">-->
+<!--            <column name="IDBASE_REM_Z" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="remSmodelByIdmodelRemZ" class="Model.Entities.RemSmodelEntity">-->
+<!--            <column name="IDMODEL_REM_Z" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sskladByIdsklprRemZ" class="Model.Entities.SskladEntity">-->
+<!--            <column name="IDSKLPR_REM_Z" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sklientByIdklientRemZ" class="Model.Entities.SklientEntity">-->
+<!--            <column name="IDKLIENT_REM_Z" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sklientByIddilerRemZ" class="Model.Entities.SklientEntity">-->
+<!--            <column name="IDDILER_REM_Z" not-null="true"/>-->
+<!--        </many-to-one>-->
+        <many-to-one name="remStremontByIdtyperemRemZ" class="Model.Entities.RemStremontEntity" insert="false" update="false">
+            <column name="IDTYPEREM_REM_Z" not-null="true"/>
+        </many-to-one>
+        <many-to-one name="remSsostByIdsostRemZ" class="Model.Entities.RemSsostEntity" insert="false" update="false">
+            <column name="IDSOST_REM_Z" not-null="true"/>
+        </many-to-one>
+        <many-to-one name="sskladByIdtecsklRemZ" class="Model.Entities.SskladEntity" insert="false" update="false">
+            <column name="IDTECSKL_REM_Z" not-null="true"/>
+        </many-to-one>
+<!--        <many-to-one name="suserByIduserRemZ" class="Model.Entities.SuserEntity">-->
+<!--            <column name="IDUSER_REM_Z" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sfirmByIdfirmRemZ" class="Model.Entities.SfirmEntity">-->
+<!--            <column name="IDFIRM_REM_Z" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="suserByIdmexanikRemZ" class="Model.Entities.SuserEntity">-->
+<!--            <column name="IDMEXANIK_REM_Z" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sbrandByIdbrandRemZ" class="Model.Entities.SbrandEntity">-->
+<!--            <column name="IDBRAND_REM_Z" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="remSactcategoryByIdactcatRemZ" class="Model.Entities.RemSactcategoryEntity">-->
+<!--            <column name="IDACTCAT_REM_Z" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="remZByIdzosnRemZ" class="Model.Entities.RemZEntity">-->
+<!--            <column name="IDZOSN_REM_Z" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="remShardwareByIdhwRemZ" class="Model.Entities.RemShardwareEntity">-->
+<!--            <column name="IDHW_REM_Z" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="remSkktByIdkktRemZ" class="Model.Entities.RemSkktEntity">-->
+<!--            <column name="IDKKT_REM_Z" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <set name="dzakpoksByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_DZAKPOK" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DzakpokEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remCqueriesByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_CQUERY" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemCqueryEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDaktsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DAKT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDaktEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDdilposttsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DDILPOSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDdilposttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDdilrettsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DDILRETT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDdilrettEntity"/>-->
+<!--        </set>-->
+        <set name="remDremontsByIdRemZ" inverse="true" >
+            <key>
+                <column name="IDZ_REM_DREMONT" not-null="true" />
+            </key>
+            <one-to-many not-found="ignore" class="Model.Entities.RemDremontEntity"/>
+        </set>
+<!--        <set name="remDscpertsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DSCPERT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDscpertEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDscrettsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DSCRETT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDscrettEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDvidachaHwsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DVIDACHA_HW" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDvidachaHwEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDvosvratHwsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DVOSVRAT_HW" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDvosvratHwEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDvzpertsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DVZPERT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDvzpertEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDvzvpotsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DVZVPOT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDvzvpotEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzaktprsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DZAKTPR" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzaktprEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzchecksByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DZCHECK" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzcheckEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzendsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DZEND" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzendEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzopersByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DZOPER" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzoperEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzpertsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DZPERT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzpertEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzposttsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DZPOSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzposttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzstartsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DZSTART" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzstartEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDztrebsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DZTREB" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDztrebEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzvidtsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DZVIDT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzvidtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzvzapsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_DZVZAP" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzvzapEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgostzsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_RGOSTZ" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgostzEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgostzdilsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_RGOSTZDIL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgostzdilEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgostzdilDvsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_RGOSTZDIL_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgostzdilDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgostzscsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_RGOSTZSC" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgostzscEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgostzscDvsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_RGOSTZSC_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgostzscDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgostzDvsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_RGOSTZ_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgostzDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgotprzsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_RGOTPRZ" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgotprzEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgotprzDvsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_RGOTPRZ_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgotprzDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgvzostsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_RGVZOST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgvzostEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgvzostDvsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_RGVZOST_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgvzostDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgvzvputisByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_RGVZVPUTI" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgvzvputiEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgvzvputiDvsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_RGVZVPUTI_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgvzvputiDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remZSByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZOSN_REM_Z" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemZEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remZdopuslsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_ZDOPUSL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemZdopuslEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remZimagesByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_ZIMAGE" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemZimageEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remZkomplsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_ZKOMPL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemZkomplEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remZneisprsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_ZNEISPR" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemZneisprEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remZperfworksByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_ZPERFWORK" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemZperfworkEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remZprneisprsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_ZPRNEISPR" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemZprneisprEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remZ1sByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_Z_1" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemZ1Entity"/>-->
+<!--        </set>-->
+<!--        <set name="remZDvsByIdRemZ" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDZ_REM_Z_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemZDvEntity"/>-->
+<!--        </set>-->
+    </class>
+</hibernate-mapping>

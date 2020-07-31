@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Model.Entities.ProgramModuleEntity" table="PROGRAM_MODULE" schema="">
+        <id name="idProgramModule">
+            <column name="ID_PROGRAM_MODULE" sql-type="bigint(19)"/>
+        </id>
+        <property name="guidProgramModule">
+            <column name="GUID_PROGRAM_MODULE" sql-type="char(38)" length="38" not-null="true"/>
+        </property>
+        <property name="nameProgramModule">
+            <column name="NAME_PROGRAM_MODULE" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="progidProgramModule">
+            <column name="PROGID_PROGRAM_MODULE" sql-type="varchar(38)" length="38" not-null="true"/>
+        </property>
+        <property name="moduleProgramModule">
+            <column name="MODULE_PROGRAM_MODULE" sql-type="varchar(40)" length="40" not-null="true"/>
+        </property>
+        <property name="descrProgramModule">
+            <column name="DESCR_PROGRAM_MODULE" sql-type="varchar(150)" length="150" not-null="true"/>
+        </property>
+        <property name="patchProgramModule">
+            <column name="PATCH_PROGRAM_MODULE" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="idbaseProgramModule">
+            <column name="IDBASE_PROGRAM_MODULE" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idextDoutProgramModule">
+            <column name="IDEXT_DOUT_PROGRAM_MODULE" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idextBaseProgramModule">
+            <column name="IDEXT_BASE_PROGRAM_MODULE" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="typeTblProgramModule">
+            <column name="TYPE_TBL_PROGRAM_MODULE" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="typemodProgramModule">
+            <column name="TYPEMOD_PROGRAM_MODULE" sql-type="integer" not-null="true"/>
+        </property>
+<!--        <set name="interfMainmenusByIdProgramModule" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDMOD_INTERF_MAINMENU" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.InterfMainmenuEntity"/>-->
+<!--        </set>-->
+<!--        <set name="interfToolbarsByIdProgramModule" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDMOD_INTERF_TOOLBAR" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.InterfToolbarEntity"/>-->
+<!--        </set>-->
+<!--        <set name="programModuleParsByIdProgramModule" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDPROGMOD_PROGRAM_MODULE_PAR" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.ProgramModuleParEntity"/>-->
+<!--        </set>-->
+    </class>
+</hibernate-mapping>

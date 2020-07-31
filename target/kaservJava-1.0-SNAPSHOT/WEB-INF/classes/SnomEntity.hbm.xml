@@ -1,0 +1,903 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Model.Entities.SnomEntity" table="SNOM" schema="">
+        <id name="idnom">
+            <column name="IDNOM" sql-type="bigint(19)"/>
+        </id>
+        <property name="tnom">
+            <column name="TNOM" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="codenom">
+            <column name="CODENOM" sql-type="integer"/>
+        </property>
+        <property name="namenom">
+            <column name="NAMENOM" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="fnamenom">
+            <column name="FNAMENOM" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="krnamenom">
+            <column name="KRNAMENOM" sql-type="varchar(40)" length="40" not-null="true"/>
+        </property>
+        <property name="idbasednom">
+            <column name="IDBASEDNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idosnednom">
+            <column name="IDOSNEDNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idfisedSnom">
+            <column name="IDFISED_SNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idgrpnom">
+            <column name="IDGRPNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="artnom">
+            <column name="ARTNOM" sql-type="varchar(40)" length="40" not-null="true"/>
+        </property>
+        <property name="gidSnom">
+            <column name="GID_SNOM" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="descrSnom">
+            <column name="DESCR_SNOM" sql-type="varchar(250)" length="250" not-null="true"/>
+        </property>
+        <property name="idfirmnom">
+            <column name="IDFIRMNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="stndsnom">
+            <column name="STNDSNOM" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="gtdnom">
+            <column name="GTDNOM" sql-type="varchar(40)" length="40" not-null="true"/>
+        </property>
+        <property name="idcountrynom">
+            <column name="IDCOUNTRYNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="flChangeNom">
+            <column name="FL_CHANGE_NOM" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="minostnom">
+            <column name="MINOSTNOM" sql-type="numeric(15,3)" precision="15" scale="3" not-null="true"/>
+        </property>
+        <property name="idbaseSnom">
+            <column name="IDBASE_SNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idextDoutSnom">
+            <column name="IDEXT_DOUT_SNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idextBaseSnom">
+            <column name="IDEXT_BASE_SNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="skidka1Snom">
+            <column name="SKIDKA1_SNOM" sql-type="numeric(15,2)" precision="15" scale="2" not-null="true"/>
+        </property>
+        <property name="skidka2Snom">
+            <column name="SKIDKA2_SNOM" sql-type="numeric(15,2)" precision="15" scale="2" not-null="true"/>
+        </property>
+        <property name="skidka3Snom">
+            <column name="SKIDKA3_SNOM" sql-type="numeric(15,2)" precision="15" scale="2" not-null="true"/>
+        </property>
+        <property name="idvidSnom">
+            <column name="IDVID_SNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="typesrgodnSnom">
+            <column name="TYPESRGODN_SNOM" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="srgodnSnom">
+            <column name="SRGODN_SNOM" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="godenDoSnom">
+            <column name="GODEN_DO_SNOM" sql-type="timestamp(19)" not-null="true"/>
+        </property>
+        <property name="idsupplierSnom">
+            <column name="IDSUPPLIER_SNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idproducerSnom">
+            <column name="IDPRODUCER_SNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="pogrSnom">
+            <column name="POGR_SNOM" sql-type="numeric(15,3)" precision="15" scale="3" not-null="true"/>
+        </property>
+        <property name="warrantySnom">
+            <column name="WARRANTY_SNOM" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="flCreditSnom">
+            <column name="FL_CREDIT_SNOM" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="flTransportSnom">
+            <column name="FL_TRANSPORT_SNOM" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="idbrandSnom">
+            <column name="IDBRAND_SNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="flAddInSoborudSnom">
+            <column name="FL_ADD_IN_SOBORUD_SNOM" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="flDvregSnom">
+            <column name="FL_DVREG_SNOM" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="idvidimagenaborSnom">
+            <column name="IDVIDIMAGENABOR_SNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="idpropnaborSnom">
+            <column name="IDPROPNABOR_SNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+        <property name="typeTblSnom">
+            <column name="TYPE_TBL_SNOM" sql-type="smallint(5)" not-null="true"/>
+        </property>
+        <property name="iddepartmentSnom">
+            <column name="IDDEPARTMENT_SNOM" sql-type="bigint(19)" not-null="true"/>
+        </property>
+<!--        <many-to-one name="sedByIdbasednom" class="Model.Entities.SedEntity">-->
+<!--            <column name="IDBASEDNOM" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sedByIdosnednom" class="Model.Entities.SedEntity">-->
+<!--            <column name="IDOSNEDNOM" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sedByIdfisedSnom" class="Model.Entities.SedEntity">-->
+<!--            <column name="IDFISED_SNOM" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sgrpnomByIdgrpnom" class="Model.Entities.SgrpnomEntity">-->
+<!--            <column name="IDGRPNOM" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sfirmByIdfirmnom" class="Model.Entities.SfirmEntity">-->
+<!--            <column name="IDFIRMNOM" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="scountryByIdcountrynom" class="Model.Entities.ScountryEntity">-->
+<!--            <column name="IDCOUNTRYNOM" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="svidnomByIdvidSnom" class="Model.Entities.SvidnomEntity">-->
+<!--            <column name="IDVID_SNOM" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sklientByIdsupplierSnom" class="Model.Entities.SklientEntity">-->
+<!--            <column name="IDSUPPLIER_SNOM" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sklientByIdproducerSnom" class="Model.Entities.SklientEntity">-->
+<!--            <column name="IDPRODUCER_SNOM" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="sbrandByIdbrandSnom" class="Model.Entities.SbrandEntity">-->
+<!--            <column name="IDBRAND_SNOM" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="svidimageNaborByIdvidimagenaborSnom" class="Model.Entities.SvidimageNaborEntity">-->
+<!--            <column name="IDVIDIMAGENABOR_SNOM" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <many-to-one name="spropnaborByIdpropnaborSnom" class="Model.Entities.SpropnaborEntity">-->
+<!--            <column name="IDPROPNABOR_SNOM" not-null="true"/>-->
+<!--        </many-to-one>-->
+<!--        <set name="dchktsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMCHKT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DchktEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dinvtsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_INVT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DinvtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dismpricetsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DISMPRICET" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DismpricetEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dosntsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMOSNT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DosntEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dotchposttsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DOTCHPOSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DotchposttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dotprposttsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DOTPRPOSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DotprposttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dpertsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMPERT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DpertEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dprntsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMPRNT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DprntEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drasbkomplsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DRASBKOMPL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrasbkomplEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drasbkompltsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DRASBKOMPLT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrasbkompltEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drealresttsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REALRESTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrealresttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drealrozntsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DREALROZNT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrealrozntEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dreatsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMREAT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DreatEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drepkkmtsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DREPKKMT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrepkkmtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drevtsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DREVT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrevtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drgGoodstsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DRG_GOODST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrgGoodstEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drgOstnomtsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DRG_OSTNOMT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrgOstnomtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="drgOtchposttsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DRG_OTCHPOSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DrgOtchposttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dsbkomplsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DSBKOMPL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DsbkomplEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dsbkompltsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DSBKOMPLT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DsbkompltEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dschfacttsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DSCHFACTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DschfacttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dschtsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMSCHT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DschtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dspntsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMSPNT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DspntEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dspotrosttsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DSPOTROSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DspotrosttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dvipprodtsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DVIPPRODT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DvipprodtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dvpoktsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DVPOKT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DvpoktEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dvpotsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMVPOT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DvpotEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dzakpoktsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DZAKPOKT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DzakpoktEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dzakposttsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_DZAKPOSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DzakposttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dzamenatsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="S_IDNOM_DZAMENAT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DzamenatEntity"/>-->
+<!--        </set>-->
+<!--        <set name="dzamenatsByIdnom_0" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="P_IDNOM_DZAMENAT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.DzamenatEntity"/>-->
+<!--        </set>-->
+<!--        <set name="hotDraschettsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_HOT_DRASCHETT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.HotDraschettEntity"/>-->
+<!--        </set>-->
+<!--        <set name="hotDrealtsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_HOT_DREALT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.HotDrealtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="hotSprosnuslsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMPR_HOT_SPROSNUSL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.HotSprosnuslEntity"/>-->
+<!--        </set>-->
+<!--        <set name="hotSprosnuslsByIdnom_0" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMBR_HOT_SPROSNUSL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.HotSprosnuslEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remCquerytsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_CQUERYT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemCquerytEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDosntsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DOSNT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDosntEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDotprposttsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DOTPRPOSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDotprposttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDpertsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DPERT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDpertEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDprntsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DPRNT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDprntEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDrakomplsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DRAKOMPL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDrakomplEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDrakompltsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DRAKOMPLT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDrakompltEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDrealtsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DREALT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDrealtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDremonthwtsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DREMONTHWT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDremonthwtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDremontkkttsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DREMONTKKTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDremontkkttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDremonttsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DREMONTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDremonttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDrgOtchposttsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DRG_OTCHPOSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDrgOtchposttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDsbkomplsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DSBKOMPL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDsbkomplEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDsbkompltsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DSBKOMPLT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDsbkompltEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDspntsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DSPNT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDspntEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDvpoktsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DVPOKT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDvpoktEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDvpotsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DVPOT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDvpotEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDvzpertsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DVZPERT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDvzpertEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDvzvpotsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DVZVPOT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDvzvpotEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzakposttsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DZAKPOSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzakposttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzakposttsByIdnom_0" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMZ_REM_DZAKPOSTT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzakposttEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzaktprtsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DZAKTPRT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzaktprtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzopertsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DZOPERT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzopertEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDztrebtsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DZTREBT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDztrebtEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remDzvzaptsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_DZVZAPT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemDzvzaptEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRggoodsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_RGGOODS" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRggoodsEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRggoodsDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_RGGOODS_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRggoodsDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgosthwsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_RGOSTHW" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgosthwEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgosthwDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_RGOSTHW_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgosthwDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgotchpostsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_RGOTCHPOST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgotchpostEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgotchpostDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_RGOTCHPOST_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgotchpostDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgsosthwsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_RGSOSTHW" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgsosthwEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgsosthwsByIdnom_0" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMKOMPL_REM_RGSOSTHW" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgsosthwEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgsosthwDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_RGSOSTHW_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgsosthwDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgsosthwDvsByIdnom_0" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMKOMPL_REM_RGSOSTHW_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgsosthwDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgvzostsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_RGVZOST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgvzostEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgvzostDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_RGVZOST_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgvzostDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgvzvputisByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_RGVZVPUTI" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgvzvputiEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remRgvzvputiDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_RGVZVPUTI_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemRgvzvputiDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remSkomplmodelsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_SKOMPLMODEL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemSkomplmodelEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remSmodelsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_SMODEL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemSmodelEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remSmodelDetalsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_SMODEL_DETAL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemSmodelDetalEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remSprrabotasByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_SPRRABOTA" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemSprrabotaEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remStyprabotsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_STYPRABOT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemStyprabotEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remZdopuslsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_ZDOPUSL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemZdopuslEntity"/>-->
+<!--        </set>-->
+<!--        <set name="remZperfworksByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_REM_ZPERFWORK" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RemZperfworkEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rggoodsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGGOODS" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RggoodsEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rggoodsDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGGOODS_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RggoodsDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgostnomsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMOSTNOM" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgostnomEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgostnomDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_OSTNOMDV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgostnomDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgotchpostsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGOTCHPOST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgotchpostEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgotchpostDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGOTCHPOST_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgotchpostDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgotprpostsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGOTPRPOST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgotprpostEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgotprpostDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGOTPRPOST_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgotprpostDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgotrspisDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGOTRSPIS_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgotrspisDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgrealDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGREAL_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgrealDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgsebprodDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGSEBPROD_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgsebprodDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgtrebnomsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGTREBNOM" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgtrebnomEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgtrebnomDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGTREBNOM_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgtrebnomDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgtrebznomsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGTREBZNOM" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgtrebznomEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgtrebznomDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGTREBZNOM_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgtrebznomDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgvipprodDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGVIPPROD_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgvipprodDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgzakpostsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGZAKPOST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgzakpostEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgzakpostDvsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_RGZAKPOST_DV" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgzakpostDvEntity"/>-->
+<!--        </set>-->
+<!--        <set name="rgzaktsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_ZAKT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.RgzaktEntity"/>-->
+<!--        </set>-->
+<!--        <set name="sbvnomsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_BVNOM" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SbvnomEntity"/>-->
+<!--        </set>-->
+<!--        <set name="scodetelsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_CODETEL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.ScodetelEntity"/>-->
+<!--        </set>-->
+<!--        <set name="scodetelsByIdnom_0" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMCOM_CODETEL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.ScodetelEntity"/>-->
+<!--        </set>-->
+<!--        <set name="sedsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMED" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SedEntity"/>-->
+<!--        </set>-->
+<!--        <set name="simportedsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_SIMPORTED" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SimportedEntity"/>-->
+<!--        </set>-->
+<!--        <set name="simportnomsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_SIMPORTNOM" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SimportnomEntity"/>-->
+<!--        </set>-->
+<!--        <set name="smodsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_MOD" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SmodEntity"/>-->
+<!--        </set>-->
+<!--        <set name="snachislsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_SNACHISL" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SnachislEntity"/>-->
+<!--        </set>-->
+<!--        <set name="snomimagesByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_SNOMIMAGE" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SnomimageEntity"/>-->
+<!--        </set>-->
+<!--        <set name="snominetcatsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_SNOMINETCAT" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SnominetcatEntity"/>-->
+<!--        </set>-->
+<!--        <set name="snompropvaluesByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_SNOMPROPVALUE" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SnompropvalueEntity"/>-->
+<!--        </set>-->
+<!--        <set name="snomrestsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_NOMREST" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SnomrestEntity"/>-->
+<!--        </set>-->
+<!--        <set name="snomAnalogsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_SNOM_ANALOG" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SnomAnalogEntity"/>-->
+<!--        </set>-->
+<!--        <set name="snomAnalogsByIdnom_0" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMANALOG_SNOM_ANALOG" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SnomAnalogEntity"/>-->
+<!--        </set>-->
+<!--        <set name="snomDopsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_SNOM_DOP" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SnomDopEntity"/>-->
+<!--        </set>-->
+<!--        <set name="spartsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOMPART" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SpartEntity"/>-->
+<!--        </set>-->
+<!--        <set name="spricesByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_PRICE" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SpriceEntity"/>-->
+<!--        </set>-->
+<!--        <set name="spriceSchedulesByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_SPRICE_SCHEDULE" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SpriceScheduleEntity"/>-->
+<!--        </set>-->
+<!--        <set name="sprnomsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_SPRNOM" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SprnomEntity"/>-->
+<!--        </set>-->
+<!--        <set name="ssezkfsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_SSEZKF" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SsezkfEntity"/>-->
+<!--        </set>-->
+<!--        <set name="ssprodsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDKOMPL_SPROD" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SsprodEntity"/>-->
+<!--        </set>-->
+<!--        <set name="svesnomsByIdnom" inverse="true">-->
+<!--            <key>-->
+<!--                <column name="IDNOM_SVESNOM" not-null="true"/>-->
+<!--            </key>-->
+<!--            <one-to-many not-found="ignore" class="Model.Entities.SvesnomEntity"/>-->
+<!--        </set>-->
+    </class>
+</hibernate-mapping>

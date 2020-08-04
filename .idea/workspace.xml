@@ -6,12 +6,55 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="279287ec-2d78-4d44-91e4-80d0cea247b0" name="Default Changelist" comment="" />
+    <list default="true" id="279287ec-2d78-4d44-91e4-80d0cea247b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/kaservJava_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jaybird_full_4_0_0_java7_beta_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/SetupEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetPhotoPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/SetupEntity.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaservJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kaservJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ChangePassServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ChangePassServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Connect/ConectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Connect/ConectDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/CustUserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/CustUserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/ChangePass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/ChangePass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetImages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetImages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CustUserEntity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CustUserEntity.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,9 +76,14 @@
   <component name="ProjectId" id="1fPKZA6nmBTzjN1vYyGPkULONHZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="java.sql.Driver" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -49,7 +97,59 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jetty Server.Jetty 9.2.29.v20191105">
+  <component name="RunManager" selected="Application.ChangePass">
+    <configuration name="ChangePass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Model.MakingData.ChangePass" />
+      <module name="kaservJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.MakingData.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetImages" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Model.MakingData.GetImages" />
+      <module name="kaservJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.MakingData.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetPhotoPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Model.MakingData.GetPhotoPath" />
+      <module name="kaservJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.MakingData.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetStatus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Model.MakingData.GetStatus" />
+      <module name="kaservJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.MakingData.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Jetty 9.2.29.v20191105" type="JettyConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Jetty 9.2.29.v20191105" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/kaservJava/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -429,9 +529,36 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.GetStatus" />
+      <item itemvalue="Application.GetPhotoPath" />
+      <item itemvalue="Application.GetImages" />
+      <item itemvalue="Application.ChangePass" />
       <item itemvalue="Jetty Server.Jetty 9.2.29.v20191105" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.57" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ChangePass" />
+        <item itemvalue="Application.GetImages" />
+        <item itemvalue="Application.GetPhotoPath" />
+        <item itemvalue="Application.GetStatus" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1843eb19" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -446,6 +573,11 @@
       <workItem from="1596114341471" duration="3267000" />
       <workItem from="1596176224850" duration="599000" />
       <workItem from="1596192371365" duration="753000" />
+      <workItem from="1596441489586" duration="785000" />
+      <workItem from="1596444539502" duration="589000" />
+      <workItem from="1596445165466" duration="2842000" />
+      <workItem from="1596454243507" duration="8255000" />
+      <workItem from="1596522723182" duration="1406000" />
     </task>
     <servers />
   </component>
@@ -455,12 +587,44 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
   </component>
 </project>

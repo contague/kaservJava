@@ -6,9 +6,9 @@
     <session-factory>
         <property name="connection.url">
             <![CDATA[jdbc:firebirdsql://178.69.191.239:3050/d:/old.fdb?charSet=utf-8&roleName=yourRole]]></property>
-        <property name="connection.driver_class">****************</property>
-        <property name="connection.username">**************</property>
-        <property name="connection.password">********</property>
+        <property name="connection.driver_class">org.firebirdsql.jdbc.FBDriver</property>
+        <property name="connection.username">SYSDBA</property>
+        <property name="connection.password">masterkey</property>
 <!--        <mapping class="Model.Entities.ArtIbEntity"/>-->
 <!--        <mapping resource="Model/Entities/ArtIbEntity.hbm.xml"/>-->
 <!--        <mapping class="Model.Entities.ArtIbGrpEntity"/>-->
@@ -851,8 +851,8 @@
 <!--        <mapping class="Model.Entities.SdogEntity"/>-->
 <!--        <mapping resource="Model/Entities/SedEntity.hbm.xml"/>-->
 <!--        <mapping class="Model.Entities.SedEntity"/>-->
-<!--        <mapping resource="Model/Entities/SetupEntity.hbm.xml"/>-->
-<!--        <mapping class="Model.Entities.SetupEntity"/>-->
+        <mapping resource="SetupEntity.hbm.xml"/>
+        <mapping class="Model.Entities.SetupEntity"/>
 <!--        <mapping class="Model.Entities.Setup2Entity"/>-->
 <!--        <mapping resource="Model/Entities/Setup2Entity.hbm.xml"/>-->
 <!--        <mapping class="Model.Entities.SfactorEntity"/>-->

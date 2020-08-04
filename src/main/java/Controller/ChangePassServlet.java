@@ -22,7 +22,7 @@ public class ChangePassServlet extends HttpServlet {
         String newPass = req.getParameter("pass");
         HttpSession session = req.getSession();
         String idCustUser = (String) session.getAttribute("idCustUser");
-        boolean result = new ChangePass().changeData(newPass, idCustUser);
+        boolean result = new ChangePass().changePassword(newPass, idCustUser);
 
         ResultChangePassEntity resultChangePassEntity = new ResultChangePassEntity(result);
         Gson gson = new Gson();

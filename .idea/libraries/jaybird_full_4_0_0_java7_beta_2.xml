@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jaybird-full-4.0.0.java7-beta-2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jaybird-full-4.0.0.java7-beta-2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

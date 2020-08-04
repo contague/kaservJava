@@ -4,7 +4,8 @@ import java.io.File;
 
 public class GetImages {
     public String[] getImg(String sn, String brand, String month){
-        String path = "C://FotoPhone/1/OtkazVGO" + "/" + brand + "/" + month + "/" + sn;
+        GetPhotoPath getPhotoPath = new GetPhotoPath();
+        String path = getPhotoPath.getPath() + "/1/OtkazVGO" + "/" + brand + "/" + month + "/" + sn;
         String[] dirList;
         File dir = new File(path);
         if (dir.exists()) {

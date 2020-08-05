@@ -37,7 +37,7 @@ public class MenuServlet extends HttpServlet {
         try {
             Gson gson = new Gson();
             ArrayList<MenuElementEntity> outputList = new ArrayList<MenuElementEntity>();
-            ArrayList<String[]> list = new GetDinamicMenu().getTable(role, idAccount, idGroupUser);
+            ArrayList<String[]> list = new GetDinamicMenu().getMenu(role, idAccount, idGroupUser);
             for (int i = 0; i < list.size(); i++){
                 String[] element = list.get(i);
                 MenuElementEntity menuElement = new MenuElementEntity(element[0], element[1],

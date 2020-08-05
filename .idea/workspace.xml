@@ -7,22 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="279287ec-2d78-4d44-91e4-80d0cea247b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/kaservJava_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jaybird_full_4_0_0_java7_beta_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/SetupEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetPhotoPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/SetupEntity.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kaservJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kaservJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ChangePassServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ChangePassServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Connect/ConectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Connect/ConectDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/CustUserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/CustUserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/ChangePass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/ChangePass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetImages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetImages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CustUserEntity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CustUserEntity.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MenuServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/MenuServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Connect/ConectDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetDinamicMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetDinamicMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetStatus.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,48 +86,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ChangePass">
-    <configuration name="ChangePass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Model.MakingData.ChangePass" />
-      <module name="kaservJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.MakingData.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetImages" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Model.MakingData.GetImages" />
-      <module name="kaservJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.MakingData.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetPhotoPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Model.MakingData.GetPhotoPath" />
-      <module name="kaservJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.MakingData.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetStatus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Model.MakingData.GetStatus" />
+  <component name="RunManager" selected="Application.GetDinamicMenu">
+    <configuration name="GetDinamicMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Model.MakingData.GetDinamicMenu" />
       <module name="kaservJava" />
       <extension name="coverage">
         <pattern>
@@ -160,6 +110,7 @@
       </deployment>
       <server-settings>
         <data>
+          <option name="baseDirectoryName" value="Jetty_9_2_29_v20191105_kaservJava_3" />
           <option name="configFiles">
             <list>
               <JettyConfigFile>
@@ -303,6 +254,7 @@
               </JettyConfigFile>
             </list>
           </option>
+          <base-directory-name>Jetty_9_2_29_v20191105_kaservJava_3</base-directory-name>
           <option name="myConfigFiles">
             <list>
               <JettyConfigFile>
@@ -449,12 +401,41 @@
         </data>
       </server-settings>
       <predefined_log_file enabled="true" id="Jetty" />
+      <ConfigurationWrapper VM_VAR="" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="kaservJava:war" />
         </option>
       </method>
+    </configuration>
+    <configuration name="DebugSite" type="Remote">
+      <module name="kaservJava" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5555" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5555" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
     </configuration>
     <configuration name="Tomcat 8.5.57" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.57" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -529,19 +510,14 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GetStatus" />
-      <item itemvalue="Application.GetPhotoPath" />
-      <item itemvalue="Application.GetImages" />
-      <item itemvalue="Application.ChangePass" />
+      <item itemvalue="Application.GetDinamicMenu" />
       <item itemvalue="Jetty Server.Jetty 9.2.29.v20191105" />
+      <item itemvalue="Remote.DebugSite" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.57" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ChangePass" />
-        <item itemvalue="Application.GetImages" />
-        <item itemvalue="Application.GetPhotoPath" />
-        <item itemvalue="Application.GetStatus" />
+        <item itemvalue="Application.GetDinamicMenu" />
       </list>
     </recent_temporary>
   </component>
@@ -577,7 +553,7 @@
       <workItem from="1596444539502" duration="589000" />
       <workItem from="1596445165466" duration="2842000" />
       <workItem from="1596454243507" duration="8255000" />
-      <workItem from="1596522723182" duration="1406000" />
+      <workItem from="1596522723182" duration="14624000" />
     </task>
     <servers />
   </component>

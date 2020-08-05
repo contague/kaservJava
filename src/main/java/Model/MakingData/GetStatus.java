@@ -76,11 +76,6 @@ public class GetStatus implements MapDAO {
         return map;
     }
 
-    public static void main(String[] args) {
-        GetStatus getStatus = new GetStatus();
-        System.out.println(getStatus.getMap("287", "Буслакова"));
-    }
-
     private String checkForNull(Object text){
         return text != null ? text.toString() : "";
     }

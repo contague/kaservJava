@@ -249,7 +249,7 @@ public class ArtIbSEntity {
 //    }
 
     @ManyToOne
-    @JoinColumn(name = "IDIMG_ART_IB_S", referencedColumnName = "ID_ART_IMG")
+    @JoinColumn(name = "IDIMG_ART_IB_S", referencedColumnName = "ID_ART_IMG", insertable = false, updatable = false)
     public ArtImgEntity getArtImgByIdimgArtIbS() {
         return artImgByIdimgArtIbS;
     }

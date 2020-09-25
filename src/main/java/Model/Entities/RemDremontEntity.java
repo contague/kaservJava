@@ -195,7 +195,7 @@ public class RemDremontEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "IDDOC_REM_DREMONT", referencedColumnName = "ID_REM_GALLDOC")
+    @JoinColumn(name = "IDDOC_REM_DREMONT", referencedColumnName = "ID_REM_GALLDOC", insertable = false, updatable = false)
     public RemGalldocEntity getRemGalldocByIddocRemDremont() {
         return remGalldocByIddocRemDremont;
     }
@@ -205,7 +205,7 @@ public class RemDremontEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "IDZ_REM_DREMONT", referencedColumnName = "ID_REM_Z")
+    @JoinColumn(name = "IDZ_REM_DREMONT", referencedColumnName = "ID_REM_Z", insertable = false, updatable = false)
     public RemZEntity getRemZByIdzRemDremont() {
         return remZByIdzRemDremont;
     }

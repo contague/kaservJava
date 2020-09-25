@@ -50,7 +50,8 @@ public class GetJournal implements ListDAO {
 
             for (int i = 0; i < remZEntityList.size(); i++){
                 RemZEntity remZEntity = remZEntityList.get(i);
-                HashMap map = new GetStatus().getMap(remZEntity.getNumRemZ() + "", remZEntity.getKlientNameRemZ());
+
+                HashMap map = new GetStatus(remZEntity.getNumRemZ() + "", remZEntity.getKlientNameRemZ()).getMap();
                 RemStremontEntity remStremontEntity = remZEntity.getRemStremontByIdtyperemRemZ();
                 RemSsostEntity remSsostEntity = remZEntity.getRemSsostByIdsostRemZ();
                 map.put("type", remStremontEntity.getNameStremont());

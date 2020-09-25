@@ -1,10 +1,34 @@
 package Model.Entity;
 
+import Model.MakingData.GetStatus;
+
 import java.util.HashMap;
 
 public class StatusEntityCreation {
 
-    public StatusEntity createEntity(HashMap map){
+    private HashMap map;
+    private GetStatus getStatus = null;
+
+    public StatusEntityCreation(GetStatus getStatus) {
+        this.getStatus = getStatus;
+    }
+
+    public StatusEntityCreation(HashMap map) {
+        this.map = map;
+    }
+
+    public HashMap getMap() {
+        return map;
+    }
+
+    public void setMap(HashMap map) {
+        this.map = map;
+    }
+
+    public StatusEntity createEntity(){
+        if (getStatus != null) {
+            map = getStatus.getMap();
+        }
         String fullName = map.get("fullName") == null ? "" : map.get("fullName").toString();
         String modelName = map.get("modelName") == null ? "" : map.get("modelName").toString();
         String SN = map.get("SN") == null ? "" : map.get("SN").toString();

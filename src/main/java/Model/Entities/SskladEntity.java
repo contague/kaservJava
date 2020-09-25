@@ -1,12 +1,33 @@
 package Model.Entities;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
+@Table(name = "SSKLAD", schema = "", catalog = "")
 public class SskladEntity {
     private long idsklad;
+    private String namesklad;
+    private String molsklad;
+    private String adrsklad;
+    private Short tsklad;
+    private String gidSsklad;
+    private Long idbaseSsklad;
+    private Long idextDoutSsklad;
+    private Long idextBaseSsklad;
+    private Short dbluchetallnomSsklad;
+    private Short dbluchetSsklad;
+    private Short typeTblSsklad;
+    private String prefiksNumSsklad;
+    private String phoneSsklad;
+    private String emailSsklad;
+    private String vkontakteSsklad;
+    private String websiteSsklad;
+    private String dopinfoSsklad;
+    private String regimRabotiSsklad;
 
+    @Id
+    @Column(name = "IDSKLAD", nullable = false)
     public long getIdsklad() {
         return idsklad;
     }
@@ -15,8 +36,8 @@ public class SskladEntity {
         this.idsklad = idsklad;
     }
 
-    private String namesklad;
-
+    @Basic
+    @Column(name = "NAMESKLAD", nullable = true, length = 200)
     public String getNamesklad() {
         return namesklad;
     }
@@ -25,8 +46,8 @@ public class SskladEntity {
         this.namesklad = namesklad;
     }
 
-    private String molsklad;
-
+    @Basic
+    @Column(name = "MOLSKLAD", nullable = true, length = 20)
     public String getMolsklad() {
         return molsklad;
     }
@@ -35,8 +56,8 @@ public class SskladEntity {
         this.molsklad = molsklad;
     }
 
-    private String adrsklad;
-
+    @Basic
+    @Column(name = "ADRSKLAD", nullable = true, length = 200)
     public String getAdrsklad() {
         return adrsklad;
     }
@@ -45,8 +66,8 @@ public class SskladEntity {
         this.adrsklad = adrsklad;
     }
 
-    private Short tsklad;
-
+    @Basic
+    @Column(name = "TSKLAD", nullable = true)
     public Short getTsklad() {
         return tsklad;
     }
@@ -55,8 +76,8 @@ public class SskladEntity {
         this.tsklad = tsklad;
     }
 
-    private String gidSsklad;
-
+    @Basic
+    @Column(name = "GID_SSKLAD", nullable = true, length = 10)
     public String getGidSsklad() {
         return gidSsklad;
     }
@@ -65,8 +86,8 @@ public class SskladEntity {
         this.gidSsklad = gidSsklad;
     }
 
-    private Long idbaseSsklad;
-
+    @Basic
+    @Column(name = "IDBASE_SSKLAD", nullable = true)
     public Long getIdbaseSsklad() {
         return idbaseSsklad;
     }
@@ -75,8 +96,8 @@ public class SskladEntity {
         this.idbaseSsklad = idbaseSsklad;
     }
 
-    private Long idextDoutSsklad;
-
+    @Basic
+    @Column(name = "IDEXT_DOUT_SSKLAD", nullable = true)
     public Long getIdextDoutSsklad() {
         return idextDoutSsklad;
     }
@@ -85,8 +106,8 @@ public class SskladEntity {
         this.idextDoutSsklad = idextDoutSsklad;
     }
 
-    private Long idextBaseSsklad;
-
+    @Basic
+    @Column(name = "IDEXT_BASE_SSKLAD", nullable = true)
     public Long getIdextBaseSsklad() {
         return idextBaseSsklad;
     }
@@ -95,8 +116,8 @@ public class SskladEntity {
         this.idextBaseSsklad = idextBaseSsklad;
     }
 
-    private Short dbluchetallnomSsklad;
-
+    @Basic
+    @Column(name = "DBLUCHETALLNOM_SSKLAD", nullable = true)
     public Short getDbluchetallnomSsklad() {
         return dbluchetallnomSsklad;
     }
@@ -105,8 +126,8 @@ public class SskladEntity {
         this.dbluchetallnomSsklad = dbluchetallnomSsklad;
     }
 
-    private Short dbluchetSsklad;
-
+    @Basic
+    @Column(name = "DBLUCHET_SSKLAD", nullable = true)
     public Short getDbluchetSsklad() {
         return dbluchetSsklad;
     }
@@ -115,8 +136,8 @@ public class SskladEntity {
         this.dbluchetSsklad = dbluchetSsklad;
     }
 
-    private Short typeTblSsklad;
-
+    @Basic
+    @Column(name = "TYPE_TBL_SSKLAD", nullable = true)
     public Short getTypeTblSsklad() {
         return typeTblSsklad;
     }
@@ -125,8 +146,8 @@ public class SskladEntity {
         this.typeTblSsklad = typeTblSsklad;
     }
 
-    private String prefiksNumSsklad;
-
+    @Basic
+    @Column(name = "PREFIKS_NUM_SSKLAD", nullable = true, length = 3)
     public String getPrefiksNumSsklad() {
         return prefiksNumSsklad;
     }
@@ -135,8 +156,8 @@ public class SskladEntity {
         this.prefiksNumSsklad = prefiksNumSsklad;
     }
 
-    private String phoneSsklad;
-
+    @Basic
+    @Column(name = "PHONE_SSKLAD", nullable = true, length = 200)
     public String getPhoneSsklad() {
         return phoneSsklad;
     }
@@ -145,8 +166,8 @@ public class SskladEntity {
         this.phoneSsklad = phoneSsklad;
     }
 
-    private String emailSsklad;
-
+    @Basic
+    @Column(name = "EMAIL_SSKLAD", nullable = true, length = 200)
     public String getEmailSsklad() {
         return emailSsklad;
     }
@@ -155,8 +176,8 @@ public class SskladEntity {
         this.emailSsklad = emailSsklad;
     }
 
-    private String vkontakteSsklad;
-
+    @Basic
+    @Column(name = "VKONTAKTE_SSKLAD", nullable = true, length = 50)
     public String getVkontakteSsklad() {
         return vkontakteSsklad;
     }
@@ -165,8 +186,8 @@ public class SskladEntity {
         this.vkontakteSsklad = vkontakteSsklad;
     }
 
-    private String websiteSsklad;
-
+    @Basic
+    @Column(name = "WEBSITE_SSKLAD", nullable = true, length = 50)
     public String getWebsiteSsklad() {
         return websiteSsklad;
     }
@@ -175,8 +196,8 @@ public class SskladEntity {
         this.websiteSsklad = websiteSsklad;
     }
 
-    private String dopinfoSsklad;
-
+    @Basic
+    @Column(name = "DOPINFO_SSKLAD", nullable = true, length = 250)
     public String getDopinfoSsklad() {
         return dopinfoSsklad;
     }
@@ -185,14 +206,79 @@ public class SskladEntity {
         this.dopinfoSsklad = dopinfoSsklad;
     }
 
-    private String regimRabotiSsklad;
-
+    @Basic
+    @Column(name = "REGIM_RABOTI_SSKLAD", nullable = true, length = 250)
     public String getRegimRabotiSsklad() {
         return regimRabotiSsklad;
     }
 
     public void setRegimRabotiSsklad(String regimRabotiSsklad) {
         this.regimRabotiSsklad = regimRabotiSsklad;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        SskladEntity entity = (SskladEntity) o;
+
+        if (idsklad != entity.idsklad) return false;
+        if (namesklad != null ? !namesklad.equals(entity.namesklad) : entity.namesklad != null) return false;
+        if (molsklad != null ? !molsklad.equals(entity.molsklad) : entity.molsklad != null) return false;
+        if (adrsklad != null ? !adrsklad.equals(entity.adrsklad) : entity.adrsklad != null) return false;
+        if (tsklad != null ? !tsklad.equals(entity.tsklad) : entity.tsklad != null) return false;
+        if (gidSsklad != null ? !gidSsklad.equals(entity.gidSsklad) : entity.gidSsklad != null) return false;
+        if (idbaseSsklad != null ? !idbaseSsklad.equals(entity.idbaseSsklad) : entity.idbaseSsklad != null)
+            return false;
+        if (idextDoutSsklad != null ? !idextDoutSsklad.equals(entity.idextDoutSsklad) : entity.idextDoutSsklad != null)
+            return false;
+        if (idextBaseSsklad != null ? !idextBaseSsklad.equals(entity.idextBaseSsklad) : entity.idextBaseSsklad != null)
+            return false;
+        if (dbluchetallnomSsklad != null ? !dbluchetallnomSsklad.equals(entity.dbluchetallnomSsklad) : entity.dbluchetallnomSsklad != null)
+            return false;
+        if (dbluchetSsklad != null ? !dbluchetSsklad.equals(entity.dbluchetSsklad) : entity.dbluchetSsklad != null)
+            return false;
+        if (typeTblSsklad != null ? !typeTblSsklad.equals(entity.typeTblSsklad) : entity.typeTblSsklad != null)
+            return false;
+        if (prefiksNumSsklad != null ? !prefiksNumSsklad.equals(entity.prefiksNumSsklad) : entity.prefiksNumSsklad != null)
+            return false;
+        if (phoneSsklad != null ? !phoneSsklad.equals(entity.phoneSsklad) : entity.phoneSsklad != null) return false;
+        if (emailSsklad != null ? !emailSsklad.equals(entity.emailSsklad) : entity.emailSsklad != null) return false;
+        if (vkontakteSsklad != null ? !vkontakteSsklad.equals(entity.vkontakteSsklad) : entity.vkontakteSsklad != null)
+            return false;
+        if (websiteSsklad != null ? !websiteSsklad.equals(entity.websiteSsklad) : entity.websiteSsklad != null)
+            return false;
+        if (dopinfoSsklad != null ? !dopinfoSsklad.equals(entity.dopinfoSsklad) : entity.dopinfoSsklad != null)
+            return false;
+        if (regimRabotiSsklad != null ? !regimRabotiSsklad.equals(entity.regimRabotiSsklad) : entity.regimRabotiSsklad != null)
+            return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (int) (idsklad ^ (idsklad >>> 32));
+        result = 31 * result + (namesklad != null ? namesklad.hashCode() : 0);
+        result = 31 * result + (molsklad != null ? molsklad.hashCode() : 0);
+        result = 31 * result + (adrsklad != null ? adrsklad.hashCode() : 0);
+        result = 31 * result + (tsklad != null ? tsklad.hashCode() : 0);
+        result = 31 * result + (gidSsklad != null ? gidSsklad.hashCode() : 0);
+        result = 31 * result + (idbaseSsklad != null ? idbaseSsklad.hashCode() : 0);
+        result = 31 * result + (idextDoutSsklad != null ? idextDoutSsklad.hashCode() : 0);
+        result = 31 * result + (idextBaseSsklad != null ? idextBaseSsklad.hashCode() : 0);
+        result = 31 * result + (dbluchetallnomSsklad != null ? dbluchetallnomSsklad.hashCode() : 0);
+        result = 31 * result + (dbluchetSsklad != null ? dbluchetSsklad.hashCode() : 0);
+        result = 31 * result + (typeTblSsklad != null ? typeTblSsklad.hashCode() : 0);
+        result = 31 * result + (prefiksNumSsklad != null ? prefiksNumSsklad.hashCode() : 0);
+        result = 31 * result + (phoneSsklad != null ? phoneSsklad.hashCode() : 0);
+        result = 31 * result + (emailSsklad != null ? emailSsklad.hashCode() : 0);
+        result = 31 * result + (vkontakteSsklad != null ? vkontakteSsklad.hashCode() : 0);
+        result = 31 * result + (websiteSsklad != null ? websiteSsklad.hashCode() : 0);
+        result = 31 * result + (dopinfoSsklad != null ? dopinfoSsklad.hashCode() : 0);
+        result = 31 * result + (regimRabotiSsklad != null ? regimRabotiSsklad.hashCode() : 0);
+        return result;
     }
 
 //    private Collection<entety.DperEntity> dpersByIdsklad;

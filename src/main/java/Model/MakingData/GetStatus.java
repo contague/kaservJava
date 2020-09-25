@@ -6,10 +6,36 @@ import org.hibernate.Transaction;
 
 import java.util.*;
 
-public class GetStatus implements MapDAO {
+public class GetStatus {
 
+    private String number;
+    private String surname;
 
-    public HashMap getMap(String number, String surname){
+    public GetStatus(String number, String surname) {
+        this.number = number;
+        this.surname = surname;
+    }
+
+    public GetStatus() {
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public HashMap getMap(){
         Session session = GetSession.getSession();
         Transaction transaction = session.beginTransaction();
         HashMap<String, String> map = new HashMap<String, String>();

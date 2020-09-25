@@ -1352,7 +1352,7 @@ public class RemZEntity {
 //    }
 //
     @ManyToOne
-    @JoinColumn(name = "IDTYPEREM_REM_Z", referencedColumnName = "ID_STREMONT")
+    @JoinColumn(name = "IDTYPEREM_REM_Z", referencedColumnName = "ID_STREMONT", insertable = false, updatable = false)
     public RemStremontEntity getRemStremontByIdtyperemRemZ() {
         return remStremontByIdtyperemRemZ;
     }
@@ -1362,7 +1362,7 @@ public class RemZEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "IDSOST_REM_Z", referencedColumnName = "ID_REMSSOST")
+    @JoinColumn(name = "IDSOST_REM_Z", referencedColumnName = "ID_REMSSOST", insertable = false, updatable = false)
     public RemSsostEntity getRemSsostByIdsostRemZ() {
         return remSsostByIdsostRemZ;
     }
@@ -1372,7 +1372,7 @@ public class RemZEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "IDTECSKL_REM_Z", referencedColumnName = "IDSKLAD")
+    @JoinColumn(name = "IDTECSKL_REM_Z", referencedColumnName = "IDSKLAD", insertable = false, updatable = false)
     public SskladEntity getSskladByIdtecsklRemZ() {
         return sskladByIdtecsklRemZ;
     }
@@ -1432,7 +1432,7 @@ public class RemZEntity {
 //    }
 
     @ManyToOne
-    @JoinColumn(name = "IDZOSN_REM_Z", referencedColumnName = "ID_REM_Z")
+    @JoinColumn(name = "IDZOSN_REM_Z", referencedColumnName = "ID_REM_Z", insertable = false, updatable = false)
     public RemZEntity getRemZByIdzosnRemZ() {
         return remZByIdzosnRemZ;
     }

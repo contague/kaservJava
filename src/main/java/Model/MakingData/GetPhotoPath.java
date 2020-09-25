@@ -18,13 +18,13 @@ public class GetPhotoPath {
             list = session.createQuery("from SetupEntity where idSetup = 402").list();
             Iterator<SetupEntity> iterator = list.iterator();
             path = iterator.next().getValueSetup();
+            transaction.commit();
+            session.close();
         }
         catch (Exception ex){
             ex.printStackTrace();
         }
-        finally {
 
-        }
         return path;
     }
 }

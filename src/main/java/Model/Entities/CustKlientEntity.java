@@ -136,7 +136,7 @@ public class CustKlientEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "IDACCOUNT_CUST_KLIENT", referencedColumnName = "ID_CUST_ACCOUNT")
+    @JoinColumn(name = "IDACCOUNT_CUST_KLIENT", referencedColumnName = "ID_CUST_ACCOUNT", insertable = false, updatable = false)
     public CustAccountEntity getCustAccountByIdaccountCustKlient() {
         return custAccountByIdaccountCustKlient;
     }
@@ -146,7 +146,7 @@ public class CustKlientEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "IDKLIENT_CUST_KLIENT", referencedColumnName = "IDKLIENT")
+    @JoinColumn(name = "IDKLIENT_CUST_KLIENT", referencedColumnName = "IDKLIENT", insertable = false, updatable = false)
     public SklientEntity getSklientByIdklientCustKlient() {
         return sklientByIdklientCustKlient;
     }

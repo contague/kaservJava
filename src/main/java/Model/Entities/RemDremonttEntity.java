@@ -30,7 +30,7 @@ public class RemDremonttEntity {
     private Long idtypUselRemDremontt;
     private String descrRemDremontt;
     private Long idmhranRemDremontt;
-//    private RemGalldocEntity remGalldocByIddocRemDremontt;
+    private RemGalldocEntity remGalldocByIddocRemDremontt;
     private SnomEntity snomByIdnomRemDremontt;
 //    private SedEntity sedByIdedRemDremontt;
 //    private RemShardwareEntity remShardwareByIdhwRemDremontt;
@@ -367,18 +367,18 @@ public class RemDremonttEntity {
         return result;
     }
 
-//    @ManyToOne
-//    @JoinColumn(name = "IDDOC_REM_DREMONTT", referencedColumnName = "ID_REM_GALLDOC")
-//    public RemGalldocEntity getRemGalldocByIddocRemDremontt() {
-//        return remGalldocByIddocRemDremontt;
-//    }
-//
-//    public void setRemGalldocByIddocRemDremontt(RemGalldocEntity remGalldocByIddocRemDremontt) {
-//        this.remGalldocByIddocRemDremontt = remGalldocByIddocRemDremontt;
-//    }
+    @ManyToOne
+    @JoinColumn(name = "IDDOC_REM_DREMONTT", referencedColumnName = "ID_REM_GALLDOC", insertable = false, updatable = false)
+    public RemGalldocEntity getRemGalldocByIddocRemDremontt() {
+        return remGalldocByIddocRemDremontt;
+    }
+
+    public void setRemGalldocByIddocRemDremontt(RemGalldocEntity remGalldocByIddocRemDremontt) {
+        this.remGalldocByIddocRemDremontt = remGalldocByIddocRemDremontt;
+    }
 
     @ManyToOne
-    @JoinColumn(name = "IDNOM_REM_DREMONTT", referencedColumnName = "IDNOM")
+    @JoinColumn(name = "IDNOM_REM_DREMONTT", referencedColumnName = "IDNOM", insertable = false, updatable = false)
     public SnomEntity getSnomByIdnomRemDremontt() {
         return snomByIdnomRemDremontt;
     }

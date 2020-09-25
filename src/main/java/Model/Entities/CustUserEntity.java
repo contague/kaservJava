@@ -16,7 +16,7 @@ public class CustUserEntity {
 //    private String loginCustUser;
     private String passwordCustUser;
 //    private Short typeTblCustUser;
-//    private CustAccountEntity custAccountByIdaccountCustUser;
+    private CustAccountEntity custAccountByIdaccountCustUser;
     //private CustUserGrpEntity custUserGrpByIdgrpCustUser;
 
     @Id
@@ -175,15 +175,15 @@ public class CustUserEntity {
         return result;
     }
 
-//    @ManyToOne
-//    @JoinColumn(name = "IDACCOUNT_CUST_USER", referencedColumnName = "ID_CUST_ACCOUNT")
-//    public CustAccountEntity getCustAccountByIdaccountCustUser() {
-//        return custAccountByIdaccountCustUser;
-//    }
-//
-//    public void setCustAccountByIdaccountCustUser(CustAccountEntity custAccountByIdaccountCustUser) {
-//        this.custAccountByIdaccountCustUser = custAccountByIdaccountCustUser;
-//    }
+    @ManyToOne
+    @JoinColumn(name = "IDACCOUNT_CUST_USER", referencedColumnName = "ID_CUST_ACCOUNT", insertable = false, updatable = false)
+    public CustAccountEntity getCustAccountByIdaccountCustUser() {
+        return custAccountByIdaccountCustUser;
+    }
+
+    public void setCustAccountByIdaccountCustUser(CustAccountEntity custAccountByIdaccountCustUser) {
+        this.custAccountByIdaccountCustUser = custAccountByIdaccountCustUser;
+    }
 
 //    @ManyToOne
 //    @JoinColumn(name = "IDGRP_CUST_USER", referencedColumnName = "ID_CUST_USER_GRP")

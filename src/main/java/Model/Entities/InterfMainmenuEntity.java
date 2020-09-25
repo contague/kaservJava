@@ -327,7 +327,7 @@ public class InterfMainmenuEntity {
 //    }
 
     @ManyToOne
-    @JoinColumn(name = "IDMOD_INTERF_MAINMENU", referencedColumnName = "ID_PROGRAM_MODULE")
+    @JoinColumn(name = "IDMOD_INTERF_MAINMENU", referencedColumnName = "ID_PROGRAM_MODULE", insertable = false, updatable = false)
     public ProgramModuleEntity getProgramModuleByIdmodInterfMainmenu() {
         return programModuleByIdmodInterfMainmenu;
     }

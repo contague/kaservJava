@@ -6,12 +6,50 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="279287ec-2d78-4d44-91e4-80d0cea247b0" name="Default Changelist" comment="">
+    <list default="true" id="279287ec-2d78-4d44-91e4-80d0cea247b0" name="Default Changelist" comment="go to spring">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/StatusController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Service/ServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Service/StatusService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MenuServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/MenuServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Connect/ConectDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetDinamicMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetDinamicMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/StatusServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/ArtIbSEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/ArtIbSEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/CustKlientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/CustKlientEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/CustUserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/CustUserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/InterfMainmenuEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/InterfMainmenuEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/RemDremontEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/RemDremontEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/RemDremonttEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/RemDremonttEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/RemZEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/RemZEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/SskladEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/SskladEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entity/StatusEntityCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entity/StatusEntityCreation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetJournal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetPhotoPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetPhotoPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ArtIbSEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ArtImgEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CustAccountEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CustKlientEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CustUserEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/InterfMainmenuEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ProgramModuleEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/RemDremontEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/RemDremonttEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/RemGalldocEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/RemSsostEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/RemStremontEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/RemZEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SetupEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SklientEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SnomEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SskladEntity.hbm.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/precache-manifest.2896e7b05aaa563f9c17b5f3cf4db660.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.f9918944.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.f9918944.chunk.js.map" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +72,24 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="#1: database" type="23e365eb:GenericImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="#1: database" type="23e365eb:GenericImplModel$Database" />
+        <item name="#1: schema" type="255a0c4b:GenericImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="#1: database" type="23e365eb:GenericImplModel$Database" />
+        <item name="#1: schema" type="255a0c4b:GenericImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -66,13 +122,20 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="java.sql.Driver" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="a8257859-d557-4c83-abca-f7c0785e9180" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="Model.Entities" />
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -86,13 +149,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GetDinamicMenu">
+  <component name="RunManager" selected="Application.StatusService">
     <configuration name="GetDinamicMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Model.MakingData.GetDinamicMenu" />
       <module name="kaservJava" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Model.MakingData.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetPhotoPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Model.MakingData.GetPhotoPath" />
+      <module name="kaservJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.MakingData.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatusService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Model.Service.StatusService" />
+      <module name="kaservJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.Service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -511,12 +600,16 @@
     </configuration>
     <list>
       <item itemvalue="Application.GetDinamicMenu" />
+      <item itemvalue="Application.GetPhotoPath" />
       <item itemvalue="Jetty Server.Jetty 9.2.29.v20191105" />
       <item itemvalue="Remote.DebugSite" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.57" />
+      <item itemvalue="Application.StatusService" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StatusService" />
+        <item itemvalue="Application.GetPhotoPath" />
         <item itemvalue="Application.GetDinamicMenu" />
       </list>
     </recent_temporary>
@@ -554,6 +647,13 @@
       <workItem from="1596445165466" duration="2842000" />
       <workItem from="1596454243507" duration="8255000" />
       <workItem from="1596522723182" duration="14624000" />
+      <workItem from="1596608037273" duration="1272000" />
+      <workItem from="1596627130083" duration="7000" />
+      <workItem from="1600443726247" duration="6000" />
+      <workItem from="1600848626442" duration="2975000" />
+      <workItem from="1600863025489" duration="4680000" />
+      <workItem from="1600928797522" duration="9760000" />
+      <workItem from="1601014232434" duration="6303000" />
     </task>
     <servers />
   </component>
@@ -602,5 +702,9 @@
         <option value="1" />
       </set>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="go to spring" />
+    <option name="LAST_COMMIT_MESSAGE" value="go to spring" />
   </component>
 </project>

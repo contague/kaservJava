@@ -1,5 +1,8 @@
 package Model.Entity;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class StatusEntity {
     private String fullName;
     private String modelName;
@@ -15,6 +18,12 @@ public class StatusEntity {
     private String repairBeginDate;
     private String repairEndDate;
     private String images;
+    private String type;
+    private String ready;
+    private String number;
+
+    public StatusEntity() {
+    }
 
     public StatusEntity(String fullName, String modelName, String SN, String IMEI, String equipment,
                         String issue, String cost, String location, String comment, String operation,
@@ -145,6 +154,30 @@ public class StatusEntity {
 
     public void setImages(String images) {
         this.images = images;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getReady() {
+        return ready;
+    }
+
+    public void setReady(String ready) {
+        this.ready = ready;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
     }
 }
 

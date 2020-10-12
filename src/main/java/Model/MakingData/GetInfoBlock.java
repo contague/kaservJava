@@ -3,6 +3,7 @@ package Model.MakingData;
 import Model.Connect.GetSession;
 import Model.Entities.ArtIbSEntity;
 import Model.Entities.ArtImgEntity;
+import Model.Entity.InfoBlockElementEntity;
 import net.iharder.Base64;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -10,10 +11,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class GetInfoBlock implements ListDAO {
+public class GetInfoBlock {
 
-    public ArrayList getList(int id, String firstDate, String secondDate, String option, String login) {
-        ArrayList<String[]> list = new ArrayList();
+    private String id;
+
+    public GetInfoBlock() {
+    }
+
+    public GetInfoBlock(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public ArrayList<InfoBlockElementEntity> getList() {
+
+        ArrayList<InfoBlockElementEntity> infoBlockList = new ArrayList<InfoBlockElementEntity>();
+
         Session session = GetSession.getSession();
         Transaction transaction = session.beginTransaction();
         List<ArtIbSEntity> entityList;
@@ -26,7 +46,7 @@ public class GetInfoBlock implements ListDAO {
                 if ((imgEntity != null) && (imgEntity.getImageArtImg() != null)) {
                     img = Base64.encodeBytes(imgEntity.getImageArtImg());
                 } else img = "";
-                list.add(new String[]{artIbSEntity.getTypeArtIbS().toString(), artIbSEntity.getTextArtIbS(), img});
+                infoBlockList.add(new InfoBlockElementEntity(artIbSEntity.getTypeArtIbS().toString(), artIbSEntity.getTextArtIbS(), img));
             }
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -34,6 +54,6 @@ public class GetInfoBlock implements ListDAO {
         finally {
             transaction.commit();
         }
-        return list;
+        return infoBlockList;
     }
 }

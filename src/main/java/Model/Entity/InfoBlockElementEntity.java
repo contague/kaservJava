@@ -5,10 +5,13 @@ public class InfoBlockElementEntity {
     private String data;
     private String img;
 
-    public InfoBlockElementEntity(String type, String data, String idImg){
+    public InfoBlockElementEntity() {
+    }
+
+    public InfoBlockElementEntity(String type, String data, String img){
         this.type = type;
         this.data = data;
-        this.img =  idImg;
+        this.img =  img;
     }
 
     public String getType() {

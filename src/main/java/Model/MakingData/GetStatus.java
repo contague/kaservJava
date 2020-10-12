@@ -1,6 +1,7 @@
 package Model.MakingData;
 import Model.Connect.GetSession;
 import Model.Entities.*;
+import Model.Entity.StatusEntity;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -35,10 +36,10 @@ public class GetStatus {
         this.surname = surname;
     }
 
-    public HashMap getMap(){
+    public StatusEntity getStatusEntity(){
+        StatusEntity statusEntity = new StatusEntity();
         Session session = GetSession.getSession();
         Transaction transaction = session.beginTransaction();
-        HashMap<String, String> map = new HashMap<String, String>();
         String operationsWithSplit = "";
 
         try {
@@ -77,20 +78,20 @@ public class GetStatus {
                 }
             }
 
-            map.put("fullName", checkForNull(resEntity.getKlientNameRemZ()));
-            map.put("modelName", checkForNull(resEntity.getModelRemZ()));
-            map.put("SN", checkForNull(resEntity.getSernumRemZ()));
-            map.put("IMEI", checkForNull(resEntity.getSernum2RemZ()));
-            map.put("equipment", checkForNull(resEntity.getKomplectRemZ()));
-            map.put("issue", checkForNull(resEntity.getNeisprRemZ()));
-            map.put("cost", checkForNull(resEntity.getSumRemZ()));
-            map.put("location", sskladEntity.getAdrsklad());
-            map.put("comment", resEntity.getComentsRemZ());
-            map.put("operation", operationsWithSplit);
-            map.put("state", ssostEntity.getNameRemssost());
-            map.put("repairBeginDate", checkForNull(resEntity.getPosRemZ()));
-            map.put("repairEndDate", checkForNull(resEntity.getPosremontRemZ()));
-            map.put("images", imagesWithSplit);
+            statusEntity.setFullName(checkForNull(resEntity.getKlientNameRemZ()));
+            statusEntity.setModelName(checkForNull(resEntity.getModelRemZ()));
+            statusEntity.setSN(checkForNull(resEntity.getSernumRemZ()));
+            statusEntity.setIMEI(checkForNull(resEntity.getSernum2RemZ()));
+            statusEntity.setEquipment(checkForNull(resEntity.getKomplectRemZ()));
+            statusEntity.setIssue(checkForNull(resEntity.getNeisprRemZ()));
+            statusEntity.setCost(checkForNull(resEntity.getSumRemZ()));
+            statusEntity.setLocation(sskladEntity.getAdrsklad());
+            statusEntity.setComment(checkForNull(resEntity.getComentsRemZ()));
+            statusEntity.setOperation(operationsWithSplit);
+            statusEntity.setState(ssostEntity.getNameRemssost());
+            statusEntity.setRepairBeginDate(checkForNull(resEntity.getPosRemZ()));
+            statusEntity.setRepairEndDate(checkForNull(resEntity.getPosremontRemZ()));
+            statusEntity.setImages(imagesWithSplit);
             session.flush();
         }
         catch (Exception ex){
@@ -99,7 +100,7 @@ public class GetStatus {
         finally {
             transaction.commit();
         }
-        return map;
+        return statusEntity;
     }
 
     private String checkForNull(Object text){

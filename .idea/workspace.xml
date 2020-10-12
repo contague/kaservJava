@@ -6,50 +6,37 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="279287ec-2d78-4d44-91e4-80d0cea247b0" name="Default Changelist" comment="go to spring">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/StatusController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Service/ServiceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Service/StatusService.java" afterDir="false" />
+    <list default="true" id="279287ec-2d78-4d44-91e4-80d0cea247b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/InfoBlockController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/WebAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/precache-manifest.30d10cf7cd94f33388040021a50ecf58.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/2.7724845a.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/2.7724845a.chunk.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/2.7724845a.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.a8c37716.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.a8c37716.chunk.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/StatusServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/ArtIbSEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/ArtIbSEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/CustKlientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/CustKlientEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/CustUserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/CustUserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/InterfMainmenuEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/InterfMainmenuEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/RemDremontEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/RemDremontEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/RemDremonttEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/RemDremonttEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/RemZEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/RemZEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entities/SskladEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/SskladEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entity/StatusEntityCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entity/StatusEntityCreation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/InfoBlockServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/StatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/StatusController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entity/InfoBlockElementEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entity/InfoBlockElementEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entity/InfoBlockEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entity/StatusEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entity/StatusEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entity/StatusEntityCreation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetInfoBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetInfoBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetJournal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetPhotoPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetPhotoPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ArtIbSEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ArtImgEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CustAccountEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CustKlientEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CustUserEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/InterfMainmenuEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ProgramModuleEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/RemDremontEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/RemDremonttEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/RemGalldocEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/RemSsostEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/RemStremontEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/RemZEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SetupEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SklientEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SnomEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SskladEntity.hbm.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Service/ServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/ServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Service/StatusService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/precache-manifest.2896e7b05aaa563f9c17b5f3cf4db660.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.f9918944.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.f9918944.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/2.2fb596f4.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/2.2fb596f4.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/2.2fb596f4.chunk.js.map" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,8 +106,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1fPKZA6nmBTzjN1vYyGPkULONHZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="java.sql.Driver" />
     <property name="JPA.DatabaseSchemaImportDialog" value="a8257859-d557-4c83-abca-f7c0785e9180" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -149,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StatusService">
+  <component name="RunManager" selected="Remote.DebugSite">
     <configuration name="GetDinamicMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Model.MakingData.GetDinamicMenu" />
       <module name="kaservJava" />
@@ -181,7 +171,7 @@
       <module name="kaservJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Model.Service.*" />
+          <option name="PATTERN" value="Model.SpringConfig.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -601,10 +591,10 @@
     <list>
       <item itemvalue="Application.GetDinamicMenu" />
       <item itemvalue="Application.GetPhotoPath" />
+      <item itemvalue="Application.StatusService" />
       <item itemvalue="Jetty Server.Jetty 9.2.29.v20191105" />
       <item itemvalue="Remote.DebugSite" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.57" />
-      <item itemvalue="Application.StatusService" />
     </list>
     <recent_temporary>
       <list>
@@ -653,8 +643,30 @@
       <workItem from="1600848626442" duration="2975000" />
       <workItem from="1600863025489" duration="4680000" />
       <workItem from="1600928797522" duration="9760000" />
-      <workItem from="1601014232434" duration="6303000" />
+      <workItem from="1601014232434" duration="11747000" />
+      <workItem from="1601032874036" duration="47000" />
+      <workItem from="1601104597492" duration="1571000" />
+      <workItem from="1601360714147" duration="5223000" />
+      <workItem from="1601372742334" duration="1390000" />
+      <workItem from="1601378118420" duration="5062000" />
+      <workItem from="1601701750048" duration="363000" />
+      <workItem from="1601978665718" duration="15000" />
+      <workItem from="1602139172451" duration="8223000" />
+      <workItem from="1602150466284" duration="6367000" />
+      <workItem from="1602229784021" duration="645000" />
+      <workItem from="1602237329382" duration="10303000" />
+      <workItem from="1602263739451" duration="4354000" />
+      <workItem from="1602483309461" duration="7157000" />
+      <workItem from="1602495684025" duration="3692000" />
     </task>
+    <task id="LOCAL-00001" summary="go to spring">
+      <created>1601020761438</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601020761438</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -704,6 +716,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="go to spring" />
     <option name="LAST_COMMIT_MESSAGE" value="go to spring" />
   </component>

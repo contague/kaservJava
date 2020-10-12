@@ -3,6 +3,7 @@ package Model.MakingData;
 import Model.Connect.GetSession;
 
 import Model.Entities.*;
+import Model.Entity.StatusEntity;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -15,7 +16,7 @@ public class GetJournal implements ListDAO {
 
     public ArrayList getList(int id, String firstDate, String secondDate, String option, String login) {
         System.out.println(firstDate + " " + secondDate + " " + option + " " + login + " в классе model");
-        ArrayList<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
+        ArrayList<StatusEntity> list = new ArrayList();
         Session session = GetSession.getSession();
         Transaction transaction = session.beginTransaction();
         Date date1 = new Date(Long.parseLong(firstDate));
@@ -51,13 +52,15 @@ public class GetJournal implements ListDAO {
             for (int i = 0; i < remZEntityList.size(); i++){
                 RemZEntity remZEntity = remZEntityList.get(i);
 
-                HashMap map = new GetStatus(remZEntity.getNumRemZ() + "", remZEntity.getKlientNameRemZ()).getMap();
+                StatusEntity statusEntity = new GetStatus(remZEntity.getNumRemZ() + "", remZEntity.getKlientNameRemZ()).getStatusEntity();
                 RemStremontEntity remStremontEntity = remZEntity.getRemStremontByIdtyperemRemZ();
                 RemSsostEntity remSsostEntity = remZEntity.getRemSsostByIdsostRemZ();
-                map.put("type", remStremontEntity.getNameStremont());
-                map.put("ready", remSsostEntity.getNameRemssost());
-                map.put("number", remZEntity.getNumRemZ() + "");
-                list.add(map);
+
+                statusEntity.setType(remStremontEntity.getNameStremont());
+                statusEntity.setReady(remSsostEntity.getNameRemssost());
+                statusEntity.setNumber(remZEntity.getNumRemZ() + "");
+
+                list.add(statusEntity);
             }
         }
         catch (Exception ex){

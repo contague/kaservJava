@@ -7,36 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="279287ec-2d78-4d44-91e4-80d0cea247b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/InfoBlockController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/AppInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/WebAppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/precache-manifest.30d10cf7cd94f33388040021a50ecf58.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/2.7724845a.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/2.7724845a.chunk.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/2.7724845a.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.a8c37716.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.a8c37716.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jaybird_full_4_0_0_java7_beta_2__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Entity/LoginSessionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/precache-manifest.3a0bc397dda5b9c7b5183658fd9bd239.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.0a724314.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.0a724314.chunk.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/InfoBlockServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/StatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/StatusController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entity/InfoBlockElementEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entity/InfoBlockElementEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entity/InfoBlockEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entity/StatusEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Entity/StatusEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Entity/StatusEntityCreation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetInfoBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetInfoBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetJournal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Service/ServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/ServiceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Service/StatusService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaservJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MenuServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetDinamicMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetDinamicMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/AppInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/AppInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/precache-manifest.30d10cf7cd94f33388040021a50ecf58.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/2.2fb596f4.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/2.2fb596f4.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/2.2fb596f4.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.a8c37716.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.a8c37716.chunk.js.map" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -598,9 +587,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GetDinamicMenu" />
         <item itemvalue="Application.StatusService" />
         <item itemvalue="Application.GetPhotoPath" />
-        <item itemvalue="Application.GetDinamicMenu" />
       </list>
     </recent_temporary>
   </component>
@@ -658,6 +647,9 @@
       <workItem from="1602263739451" duration="4354000" />
       <workItem from="1602483309461" duration="7157000" />
       <workItem from="1602495684025" duration="3692000" />
+      <workItem from="1602746593172" duration="2138000" />
+      <workItem from="1602749751389" duration="24000" />
+      <workItem from="1602751846179" duration="7050000" />
     </task>
     <task id="LOCAL-00001" summary="go to spring">
       <created>1601020761438</created>

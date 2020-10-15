@@ -1,6 +1,8 @@
 package Model.MakingData;
 
 import Model.Connect.GetSession;
+import Model.Entity.MenuElementEntity;
+import com.google.gson.internal.$Gson$Preconditions;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -18,11 +20,89 @@ public class GetDinamicMenu {
     private String idModule;
     private String module;
 
+    public GetDinamicMenu(String idGroup1, String group1, String idGroup2, String group2, String idGroup3, String group3, String idModule, String module) {
+        this.idGroup1 = idGroup1;
+        this.group1 = group1;
+        this.idGroup2 = idGroup2;
+        this.group2 = group2;
+        this.idGroup3 = idGroup3;
+        this.group3 = group3;
+        this.idModule = idModule;
+        this.module = module;
+    }
+
+    public GetDinamicMenu() {
+    }
+
+    public String getIdGroup1() {
+        return idGroup1;
+    }
+
+    public void setIdGroup1(String idGroup1) {
+        this.idGroup1 = idGroup1;
+    }
+
+    public String getGroup1() {
+        return group1;
+    }
+
+    public void setGroup1(String group1) {
+        this.group1 = group1;
+    }
+
+    public String getIdGroup2() {
+        return idGroup2;
+    }
+
+    public void setIdGroup2(String idGroup2) {
+        this.idGroup2 = idGroup2;
+    }
+
+    public String getGroup2() {
+        return group2;
+    }
+
+    public void setGroup2(String group2) {
+        this.group2 = group2;
+    }
+
+    public String getIdGroup3() {
+        return idGroup3;
+    }
+
+    public void setIdGroup3(String idGroup3) {
+        this.idGroup3 = idGroup3;
+    }
+
+    public String getGroup3() {
+        return group3;
+    }
+
+    public void setGroup3(String group3) {
+        this.group3 = group3;
+    }
+
+    public String getIdModule() {
+        return idModule;
+    }
+
+    public void setIdModule(String idModule) {
+        this.idModule = idModule;
+    }
+
+    public String getModule() {
+        return module;
+    }
+
+    public void setModule(String module) {
+        this.module = module;
+    }
+
     public ArrayList getMenu(String role, String idAccount, String idGroupUser){
         Session session = GetSession.getSession();
         Transaction transaction = session.beginTransaction();
         List<Object[]> list;
-        ArrayList<String[]> menuList = new ArrayList();
+        ArrayList<MenuElementEntity> menuList = new ArrayList();
 
         String commandGuest =
                 "select interf_get_table_mainmenu.*, "
@@ -53,10 +133,13 @@ public class GetDinamicMenu {
 
         String finalCommand = "";
         try{
-            list = session.createSQLQuery(commandGuest).list();
-            menuList = createMenuList(menuList, list);
+
             if (role.equals("diler")) {
                 list = session.createSQLQuery(commandDiler).list();
+                menuList = createMenuList(menuList, list);
+            }
+            else {
+                list = session.createSQLQuery(commandGuest).list();
                 menuList = createMenuList(menuList, list);
             }
         }
@@ -69,7 +152,7 @@ public class GetDinamicMenu {
         return menuList;
     }
 
-    private ArrayList<String[]> createMenuList(ArrayList<String[]> menuList, List<Object[]> list){
+    private ArrayList<MenuElementEntity> createMenuList(ArrayList<MenuElementEntity> menuList, List<Object[]> list){
         for (Object[] entity : list) {
             idGroup1 = turnToString(entity[0]);
             group1 = turnToString(entity[1]);
@@ -79,7 +162,7 @@ public class GetDinamicMenu {
             group3 = turnToString(entity[7]);
             idModule = turnToString(entity[9]);
             module = turnToString(entity[10]);
-            menuList.add(new String[]{idGroup1, group1, idGroup2, group2, idGroup3, group3, idModule, module});
+            menuList.add(new MenuElementEntity(idGroup1, group1, idGroup2, group2, idGroup3, group3, idModule, module));
         }
         return menuList;
     }

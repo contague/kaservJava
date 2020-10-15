@@ -30,13 +30,11 @@ public class MenuController {
         }
         else
             loginSessionEntity = (LoginSessionEntity)session.getAttribute("login");
-
         String role = loginSessionEntity.getRole();
         String idAccount = loginSessionEntity.getIdAccount();
         String idGroupUser = loginSessionEntity.getIdGroupUser();
         GetDinamicMenu getDinamicMenu = new GetDinamicMenu();
         ArrayList<MenuElementEntity> list = getDinamicMenu.getMenu(role, idAccount, idGroupUser);
-        int r = 0;
         return list;
     }
 }

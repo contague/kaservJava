@@ -133,13 +133,11 @@ public class GetDinamicMenu {
 
         String finalCommand = "";
         try{
+            list = session.createSQLQuery(commandGuest).list();
+            menuList = createMenuList(menuList, list);
 
             if (role.equals("diler")) {
                 list = session.createSQLQuery(commandDiler).list();
-                menuList = createMenuList(menuList, list);
-            }
-            else {
-                list = session.createSQLQuery(commandGuest).list();
                 menuList = createMenuList(menuList, list);
             }
         }

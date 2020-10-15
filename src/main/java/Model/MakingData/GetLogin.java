@@ -3,6 +3,7 @@ package Model.MakingData;
 import Model.Connect.GetSession;
 import Model.Entities.CustAccountEntity;
 import Model.Entities.CustUserEntity;
+import Model.Entity.LoginSessionEntity;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -11,33 +12,59 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-public class GetLogin implements MapDAO {
+public class GetLogin {
 
-    public HashMap getMap(String number, String surname) {
-        HashMap<String, String> map = new HashMap<String, String>();
+    private String log;
+    private String pass;
+
+    public GetLogin() {
+    }
+
+    public GetLogin(String log, String pass) {
+        this.log = log;
+        this.pass = pass;
+    }
+
+    public String getLog() {
+        return log;
+    }
+
+    public void setLog(String log) {
+        this.log = log;
+    }
+
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
+
+    public LoginSessionEntity getLogin(LoginSessionEntity loginSessionEntity) {
         Session session = GetSession.getSession();
         Transaction transaction = session.beginTransaction();
         List<CustAccountEntity> custAccountEntities;
 
         try {
-            custAccountEntities = session.createQuery("from CustAccountEntity where loginCustAccount = '" + surname + "'").list();
+            custAccountEntities = session.createQuery("from CustAccountEntity where loginCustAccount = '" + log + "'").list();
             CustAccountEntity custAccountEntity = custAccountEntities.get(0);
             Collection<CustUserEntity> custUserEntities = custAccountEntity.getCustUsersByIdCustAccount();
             Iterator<CustUserEntity> custUserEntityIterator = custUserEntities.iterator();
             CustUserEntity custUserEntity = custUserEntityIterator.next();
-            String pass = custUserEntity.getPasswordCustUser();
+            String password = custUserEntity.getPasswordCustUser();
 
-            if(number.equals(pass)){
-                map.put("idAccount", custUserEntity.getIdaccountCustUser() + "");
-                map.put("idGroupUser", custUserEntity.getIdgrpCustUser() + "");
-                map.put("role", "diler");
-                map.put("idCustUser", custUserEntity.getIdCustUser() + "");
+            if(pass.equals(password)){
+                loginSessionEntity.setIdAccount(custUserEntity.getIdaccountCustUser() + "");
+                loginSessionEntity.setIdGroupUser(custUserEntity.getIdgrpCustUser() + "");
+                loginSessionEntity.setRole("diler");
+                loginSessionEntity.setIdCustUser(custUserEntity.getIdCustUser() + "");
             }
 
             else {
-                map.put("idAccount", "0");
-                map.put("idGroupUser", "0");
-                map.put("role", "guest");
+                loginSessionEntity.setIdAccount("0");
+                loginSessionEntity.setIdGroupUser("0");
+                loginSessionEntity.setRole("guest");
             }
         }
         catch (Exception ex){
@@ -47,6 +74,6 @@ public class GetLogin implements MapDAO {
             transaction.commit();
         }
 
-        return map;
+        return loginSessionEntity;
     }
 }

@@ -59,6 +59,7 @@ public class GetLogin {
                 loginSessionEntity.setIdGroupUser(custUserEntity.getIdgrpCustUser() + "");
                 loginSessionEntity.setRole("diler");
                 loginSessionEntity.setIdCustUser(custUserEntity.getIdCustUser() + "");
+                loginSessionEntity.setLogin(log);
             }
 
             else {

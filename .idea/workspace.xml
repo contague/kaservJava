@@ -7,20 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="279287ec-2d78-4d44-91e4-80d0cea247b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/ChangePassController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/precache-manifest.adde0e2c0cec9f0c2d4b91ff13cc853c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.e514eb66.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.e514eb66.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/ImgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/StatusJournalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/precache-manifest.76238fe20e80df1433891471f0168b1a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.aa2d62b0.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.aa2d62b0.chunk.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ChangePassServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/ChangePass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/ChangePass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ImgServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/StatusJournalServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetJournal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetPhotoPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetPhotoPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/ListDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/MapDAO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/AppInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/AppInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/precache-manifest.de6828f43f8b217d86190e2f4164a0cf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/precache-manifest.adde0e2c0cec9f0c2d4b91ff13cc853c.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.bd4a69b3.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.bd4a69b3.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.e514eb66.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.e514eb66.chunk.js.map" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -640,7 +646,9 @@
       <workItem from="1602746593172" duration="2138000" />
       <workItem from="1602749751389" duration="24000" />
       <workItem from="1602751846179" duration="13702000" />
-      <workItem from="1602777147422" duration="2626000" />
+      <workItem from="1602777147422" duration="2878000" />
+      <workItem from="1602829880744" duration="3453000" />
+      <workItem from="1602842546185" duration="7603000" />
     </task>
     <task id="LOCAL-00001" summary="go to spring">
       <created>1601020761438</created>
@@ -663,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602778343356</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add SpringMVC changePass">
+      <created>1602779854286</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602779854286</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -717,6 +732,7 @@
     <MESSAGE value="go to spring" />
     <MESSAGE value="add Menu controller" />
     <MESSAGE value="add SpringMVC login" />
-    <option name="LAST_COMMIT_MESSAGE" value="add SpringMVC login" />
+    <MESSAGE value="add SpringMVC changePass" />
+    <option name="LAST_COMMIT_MESSAGE" value="add SpringMVC changePass" />
   </component>
 </project>

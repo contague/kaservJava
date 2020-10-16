@@ -1,18 +1,20 @@
 package Controller;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
 import javax.servlet.http.HttpServletResponse;
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
 
-@WebServlet(urlPatterns = "statusImage")
-public class ImgServlet extends HttpServlet {
+@RestController
+public class ImgController {
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String path = req.getParameter("path");
+    @GetMapping("statusImage")
+    public void imgOutput(@RequestParam("path") String path, HttpServletResponse resp) throws Exception{
         String resultPath = java.net.URLDecoder.decode(path);
         File file = new File(resultPath);
         System.out.println(file);

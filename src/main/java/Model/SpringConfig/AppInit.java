@@ -17,6 +17,7 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
     }
 
     protected String[] getServletMappings() {
-        return new String[]{"/status", "/infoBlock", "/menu", "/checkLogin", "/login", "/logOut", "/changePass"};
+        return new String[]{"/status", "/infoBlock", "/menu", "/checkLogin", "/login",
+                "/logOut", "/changePass", "/statusJournal", "/statusImage"};
     }
 }

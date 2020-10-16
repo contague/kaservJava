@@ -12,9 +12,56 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class GetJournal implements ListDAO {
+public class GetJournal {
 
-    public ArrayList getList(int id, String firstDate, String secondDate, String option, String login) {
+    private String firstDate;
+    private String secondDate;
+    private String option;
+    private String login;
+
+    public GetJournal() {
+    }
+
+    public GetJournal(String firstDate, String secondDate, String option, String login) {
+        this.firstDate = firstDate;
+        this.secondDate = secondDate;
+        this.option = option;
+        this.login = login;
+    }
+
+    public String getFirstDate() {
+        return firstDate;
+    }
+
+    public void setFirstDate(String firstDate) {
+        this.firstDate = firstDate;
+    }
+
+    public String getSecondDate() {
+        return secondDate;
+    }
+
+    public void setSecondDate(String secondDate) {
+        this.secondDate = secondDate;
+    }
+
+    public String getOption() {
+        return option;
+    }
+
+    public void setOption(String option) {
+        this.option = option;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public ArrayList journalList() {
         System.out.println(firstDate + " " + secondDate + " " + option + " " + login + " в классе model");
         ArrayList<StatusEntity> list = new ArrayList();
         Session session = GetSession.getSession();

@@ -25,6 +25,7 @@ public class GetPhotoPath {
             ex.printStackTrace();
         }
 
-        return path;
+        //return path;
+        return "C:/FotoPhone";
     }
 }

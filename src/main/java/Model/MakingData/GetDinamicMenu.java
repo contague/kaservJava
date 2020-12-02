@@ -2,7 +2,6 @@ package Model.MakingData;
 
 import Model.Connect.GetSession;
 import Model.Entity.MenuElementEntity;
-import com.google.gson.internal.$Gson$Preconditions;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 

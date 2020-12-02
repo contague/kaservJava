@@ -20,8 +20,12 @@ public class MenuController {
     @Autowired
     MenuService service;
 
+    int i =0;
+
     @GetMapping("menu")
     public ArrayList<MenuElementEntity> menu(){
+        System.out.println("test");
+
 
         LoginSessionEntity loginSessionEntity;
         if (session.getAttribute("login") == null){
@@ -35,6 +39,8 @@ public class MenuController {
         String idGroupUser = loginSessionEntity.getIdGroupUser();
         GetDinamicMenu getDinamicMenu = new GetDinamicMenu();
         ArrayList<MenuElementEntity> list = getDinamicMenu.getMenu(role, idAccount, idGroupUser);
+        System.out.println(i);
+        System.out.println(i +  6);
         return list;
     }
 }

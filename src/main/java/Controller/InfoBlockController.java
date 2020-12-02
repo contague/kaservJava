@@ -12,6 +12,7 @@ public class InfoBlockController {
 
     @PostMapping("infoBlock")
     public ArrayList infoBlockForOut(@RequestBody GetInfoBlock getInfoBlock){
+
         return getInfoBlock.getList();
     }
 }

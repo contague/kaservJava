@@ -5,71 +5,123 @@
       <artifact name="kaservJava:war" />
     </artifacts-to-build>
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="279287ec-2d78-4d44-91e4-80d0cea247b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/ImgController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/StatusJournalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/precache-manifest.76238fe20e80df1433891471f0168b1a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.aa2d62b0.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/main.aa2d62b0.chunk.js.map" afterDir="false" />
+    <list default="true" id="279287ec-2d78-4d44-91e4-80d0cea247b0" name="Default Changelist" comment="here Spring boot starts">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kaservJava.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jaybird_full_4_0_0_java7_beta_2__3_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/SpringBootAppConf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/precache-manifest.e02b3ea12525162b1a0fb446bb847ff4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/service-worker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/css/2.0252c3bb.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/css/2.0252c3bb.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/css/main.ac97ba77.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/css/main.ac97ba77.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/js/2.2fb596f4.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/js/2.2fb596f4.chunk.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/js/2.2fb596f4.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/js/main.e77c0de0.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/js/main.e77c0de0.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/js/runtime-main.12b33102.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/js/runtime-main.12b33102.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/brand-icons.13db00b7.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/brand-icons.a046592b.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/brand-icons.a1a749e8.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/brand-icons.c5ebe0b3.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/brand-icons.e8c322de.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/flags.9c74e172.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/icons.0ab54153.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/icons.8e3c7f55.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/icons.962a1bf3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/icons.b87b9ba5.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/icons.faff9214.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/outline-icons.701ae6ab.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/outline-icons.82f60bd0.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/outline-icons.ad97afd3.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/outline-icons.cd6c777f.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/media/outline-icons.ef60a4f6.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ImgServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/StatusJournalServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetJournal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetJournal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetPhotoPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetPhotoPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/ListDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/MapDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/AppInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/AppInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/precache-manifest.adde0e2c0cec9f0c2d4b91ff13cc853c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.e514eb66.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.e514eb66.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/InfoBlockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/InfoBlockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetDinamicMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MakingData/GetDinamicMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/AppInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/ServiceConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/SpringConfig/WebAppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jaybird-full-4.0.0.java7-beta-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/precache-manifest.76238fe20e80df1433891471f0168b1a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/2.0252c3bb.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/2.0252c3bb.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/main.ac97ba77.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/main.ac97ba77.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/2.7724845a.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/2.7724845a.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/2.7724845a.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.aa2d62b0.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/main.aa2d62b0.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/runtime-main.12b33102.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/runtime-main.12b33102.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/brand-icons.13db00b7.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/brand-icons.a046592b.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/brand-icons.a1a749e8.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/brand-icons.c5ebe0b3.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/brand-icons.e8c322de.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/flags.9c74e172.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/icons.0ab54153.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/icons.8e3c7f55.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/icons.962a1bf3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/icons.b87b9ba5.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/icons.faff9214.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/outline-icons.701ae6ab.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/outline-icons.82f60bd0.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/outline-icons.ad97afd3.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/outline-icons.cd6c777f.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/media/outline-icons.ef60a4f6.woff" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
-        <item name="#1: database" type="23e365eb:GenericImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
-        <item name="#1: database" type="23e365eb:GenericImplModel$Database" />
-        <item name="#1: schema" type="255a0c4b:GenericImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
-        <item name="#1: database" type="23e365eb:GenericImplModel$Database" />
-        <item name="#1: schema" type="255a0c4b:GenericImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,21 +140,24 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1fPKZA6nmBTzjN1vYyGPkULONHZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="java.sql.Driver" />
     <property name="JPA.DatabaseSchemaImportDialog" value="a8257859-d557-4c83-abca-f7c0785e9180" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -110,388 +165,19 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="android.dex.compiler" />
   </component>
   <component name="RecentsManager">
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="Model.Entities" />
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andrew\IdeaProjects\kaservJava\src\main\webapp" />
+      <recent name="C:\Users\andrew\IdeaProjects\kaservJava\src\main\resources\static" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Remote.DebugSite">
-    <configuration name="GetDinamicMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Model.MakingData.GetDinamicMenu" />
-      <module name="kaservJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.MakingData.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetPhotoPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Model.MakingData.GetPhotoPath" />
-      <module name="kaservJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.MakingData.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StatusService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Model.Service.StatusService" />
-      <module name="kaservJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.SpringConfig.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Jetty 9.2.29.v20191105" type="JettyConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Jetty 9.2.29.v20191105" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/kaservJava/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="kaservJava:war">
-          <settings DEPLOYMENT_METHOD="contexts" />
-        </artifact>
-      </deployment>
-      <server-settings>
-        <data>
-          <option name="baseDirectoryName" value="Jetty_9_2_29_v20191105_kaservJava_3" />
-          <option name="configFiles">
-            <list>
-              <JettyConfigFile>
-                <option name="active" value="true" />
-                <option name="path" value="modules\jmx.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\annotations.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\cdi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\client.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\continuation.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\debug.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\deploy.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ext.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\fcgi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\hawtio.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\home-base-warning.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\http.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\https.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ipaccess.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jaas.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jamon.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jaspi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jminix.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jmx-remote.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jndi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jolokia.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jsp.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jstl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jvm.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\lowresources.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\monitor.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\plus.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\protonego.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\proxy.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\quickstart.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\requestlog.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\resources.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\rewrite.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\security.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\server.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\servlet.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\servlets.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\setuid.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\spdy.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\spring.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ssl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\stats.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\webapp.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\websocket.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\xinetd.mod" />
-              </JettyConfigFile>
-            </list>
-          </option>
-          <base-directory-name>Jetty_9_2_29_v20191105_kaservJava_3</base-directory-name>
-          <option name="myConfigFiles">
-            <list>
-              <JettyConfigFile>
-                <option name="active" value="true" />
-                <option name="path" value="modules\jmx.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\annotations.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\cdi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\client.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\continuation.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\debug.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\deploy.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ext.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\fcgi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\hawtio.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\home-base-warning.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\http.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\https.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ipaccess.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jaas.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jamon.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jaspi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jminix.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jmx-remote.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jndi.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jolokia.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jsp.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jstl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\jvm.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\logging.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\lowresources.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\monitor.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\plus.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\protonego.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\proxy.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\quickstart.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\requestlog.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\resources.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\rewrite.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\security.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\server.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\servlet.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\servlets.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\setuid.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\spdy.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\spring.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\ssl.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\stats.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\webapp.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\websocket.mod" />
-              </JettyConfigFile>
-              <JettyConfigFile>
-                <option name="path" value="modules\xinetd.mod" />
-              </JettyConfigFile>
-            </list>
-          </option>
-        </data>
-      </server-settings>
-      <predefined_log_file enabled="true" id="Jetty" />
-      <ConfigurationWrapper VM_VAR="" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="kaservJava:war" />
-        </option>
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.SpringBootAppConf">
     <configuration name="DebugSite" type="Remote">
       <module name="kaservJava" />
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -506,7 +192,20 @@
       </RunnerSettings>
       <method v="2" />
     </configuration>
-    <configuration name="Tomcat 8.5.57" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.57" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="SpringBootAppConf" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="kaservJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.SpringConfig.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="Model.SpringConfig.SpringBootAppConf" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.60" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="kaservJava:war">
@@ -516,7 +215,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_kaservJava" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_kaservJava_3" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -524,7 +223,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="60400" />
+        <option name="DEBUG_PORT" value="64539" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -579,30 +278,15 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GetDinamicMenu" />
-      <item itemvalue="Application.GetPhotoPath" />
-      <item itemvalue="Application.StatusService" />
-      <item itemvalue="Jetty Server.Jetty 9.2.29.v20191105" />
       <item itemvalue="Remote.DebugSite" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.57" />
+      <item itemvalue="Spring Boot.SpringBootAppConf" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.60" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GetDinamicMenu" />
-        <item itemvalue="Application.StatusService" />
-        <item itemvalue="Application.GetPhotoPath" />
+        <item itemvalue="Spring Boot.SpringBootAppConf" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -649,6 +333,15 @@
       <workItem from="1602777147422" duration="2878000" />
       <workItem from="1602829880744" duration="3453000" />
       <workItem from="1602842546185" duration="7603000" />
+      <workItem from="1606648259342" duration="53000" />
+      <workItem from="1606648647676" duration="342000" />
+      <workItem from="1606649029395" duration="664000" />
+      <workItem from="1606649923757" duration="886000" />
+      <workItem from="1606666532270" duration="2354000" />
+      <workItem from="1606714707518" duration="740000" />
+      <workItem from="1606715493107" duration="81000" />
+      <workItem from="1606726538470" duration="1514000" />
+      <workItem from="1606734480686" duration="4222000" />
     </task>
     <task id="LOCAL-00001" summary="go to spring">
       <created>1601020761438</created>
@@ -678,11 +371,18 @@
       <option name="project" value="LOCAL" />
       <updated>1602779854286</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="here Spring boot starts">
+      <created>1606668241502</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606668241502</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -714,18 +414,17 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -733,6 +432,93 @@
     <MESSAGE value="add Menu controller" />
     <MESSAGE value="add SpringMVC login" />
     <MESSAGE value="add SpringMVC changePass" />
-    <option name="LAST_COMMIT_MESSAGE" value="add SpringMVC changePass" />
+    <MESSAGE value="here Spring boot starts" />
+    <option name="LAST_COMMIT_MESSAGE" value="here Spring boot starts" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="398" key="#TomEE_Server" timestamp="1606649060275">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="398" key="#TomEE_Server/0.0.1920.1040@0.0.1920.1040" timestamp="1606649060275" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606649119565">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606649119565" />
+    <state x="690" y="159" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1606649096801">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="159" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1040@0.0.1920.1040" timestamp="1606649096801" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1606649093635">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606649093635" />
+    <state width="1237" height="247" key="GridCell.Tab.0.bottom" timestamp="1606750499228">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="247" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606750499228" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606726633818" />
+    <state width="1237" height="247" key="GridCell.Tab.0.center" timestamp="1606750499228">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="247" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606750499228" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606726633817" />
+    <state width="1237" height="247" key="GridCell.Tab.0.left" timestamp="1606750499228">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="247" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606750499228" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606726633817" />
+    <state width="1237" height="247" key="GridCell.Tab.0.right" timestamp="1606750499228">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="247" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606750499228" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606726633817" />
+    <state width="1237" height="247" key="GridCell.Tab.1.bottom" timestamp="1606739459837">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="247" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606739459837" />
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606726633818" />
+    <state width="1237" height="247" key="GridCell.Tab.1.center" timestamp="1606739459836">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="247" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1606739459836" />
+    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606726633818" />
+    <state width="1237" height="247" key="GridCell.Tab.1.left" timestamp="1606739459836">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="247" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1606739459836" />
+    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606726633818" />
+    <state width="1237" height="247" key="GridCell.Tab.1.right" timestamp="1606739459837">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="247" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1606739459837" />
+    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606726633818" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1606667942861">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606667942861" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1606667942861">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606667942861" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1606667942861">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606667942861" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1606667942861">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606667942861" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1606649359601">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606649359601" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606668287275">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606668287275" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1606667017408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606667017408" />
   </component>
 </project>
